@@ -1,46 +1,43 @@
 # Fathima Nuzha M | Cybersecurity GRC Portfolio
 
-**Career transition into Governance, Risk and Compliance**  
-Business-focused case studies in security governance, risk assessment, privacy and enterprise assurance.
+**Governance, Risk and Compliance — analysis and documentation**
 
-I am building practical GRC skills through structured learning and simulated consulting assignments. This portfolio shows how I approach business problems, evaluate obligations, prioritise controls and communicate recommendations to decision-makers.
+This portfolio presents business-focused GRC analysis, framework evaluations and advisory documents. It brings together compliance landscape assessments, prioritised recommendations, governance structures and implementation roadmaps.
 
-## Start here: TechStart security and compliance strategy
+## Featured project — TechStart GRC strategy
 
-**The business problem:** A growing UK SaaS company is pursuing an enterprise financial services customer but cannot provide evidence of a formal security programme.
+**Business context:** A growing UK SaaS company needs a formal security programme and credible evidence for enterprise procurement.
 
-**The proposed decision:** Establish ISO 27001 as the primary assurance target, address privacy obligations immediately in parallel, and add SOC 2 only when customer demand justifies a separate engagement.
+**Analysis:** Regulatory obligations, security governance gaps, framework suitability, delivery priorities and accountability.
 
-**What the case demonstrates:** Turning an uncertain starting point into an owned, phased programme with transparent assumptions, realistic dependencies and an honest customer response.
+**Recommendation:** Use ISO 27001 as the primary assurance target, address privacy obligations immediately in parallel, and consider SOC 2 when customer demand supports the additional investment.
 
-[Read the case study and key decisions →](Week-01/README.md)  
-[Open the executive landscape report →](Week-01/Deliverables/TechStart-GRC-Landscape-Report-v1.0.md)
+[Explore the analysis and key decisions →](Week-01/README.md)  
+[Read the GRC landscape report →](Week-01/Deliverables/TechStart-GRC-Landscape-Report-v1.0.md)
 
-## Project index
+## Document portfolio
 
-| Project | Evidence available | Current stage |
-|---|---|---|
-| [01 — TechStart GRC strategy](Week-01/README.md) | Landscape report, framework comparison, priorities, team structure and RACI | Initial assisted draft; learner validation and mentor review pending |
-
-## Skills being developed
-
-| GRC capability | Portfolio evidence |
+| Document | Purpose |
 |---|---|
-| Regulatory scoping and gap analysis | [Landscape report: obligations and RAG assessment](Week-01/Deliverables/TechStart-GRC-Landscape-Report-v1.0.md) |
-| Framework selection and commercial judgement | [Comparison table](Week-01/Deliverables/Framework-Comparison-Table.md) and [priority recommendation](Week-01/Deliverables/Framework-Priority-Recommendation.md) |
-| Programme planning and executive communication | [12-month roadmap](Week-01/Deliverables/TechStart-GRC-Landscape-Report-v1.0.md) |
-| Accountability and assurance independence | [Team structure, three lines and RACI](Week-01/Deliverables/GRC-Team-Structure-Recommendation.md) |
+| [GRC landscape analysis](Week-01/Deliverables/TechStart-GRC-Landscape-Report-v1.0.md) | Assess obligations, governance gaps and the proposed 12-month programme |
+| [Framework comparison](Week-01/Deliverables/Framework-Comparison-Table.md) | Compare ISO 27001, NIST CSF, SOC 2, GDPR and PCI DSS |
+| [Framework priority recommendation](Week-01/Deliverables/Framework-Priority-Recommendation.md) | Explain investment priorities, trade-offs, costs and dependencies |
+| [GRC operating model](Week-01/Deliverables/GRC-Team-Structure-Recommendation.md) | Define roles, reporting lines, three lines of defence and RACI |
 
-## How I intend to develop each project
+## Approach
 
-Read the learning material, assess the scenario, build the deliverables, verify key claims against primary sources, explain the trade-offs in my own words, and revise after feedback. Each project records its current status rather than presenting a first draft as reviewed work.
+Establish the business context, distinguish evidence from assumptions, assess applicable obligations, compare practical options and document recommendations with clear owners and dependencies. Source references and document status are recorded alongside the analysis.
 
-[Learning roadmap](00-Portfolio-Guide/Learning-Roadmap.md) · [Portfolio standards](00-Portfolio-Guide/Portfolio-Standards.md) · [Sources and attribution](SOURCES.md)
+## Areas demonstrated
 
-## Scope and transparency
+- Security governance and risk ownership.
+- Regulatory applicability and privacy scoping.
+- Framework evaluation and assurance strategy.
+- Programme planning and executive reporting.
+- Organisational design and responsibility mapping.
 
-These are fictional educational cases, not real client engagements or claims of certification. Initial Week 01 drafting and research were AI-assisted; learner validation is pending. Budgets and delivery dates are planning assumptions. Personal learning reflections will be added after review rather than generated as experience claims.
+**Case context:** TechStart is fictional. The documents are scenario-based analysis; they do not represent a real client engagement or implemented controls. The initial document set is version 1.0, with substantive review pending.
 
-Learning source: Michael Lawrence's [Cybersecurity GRC Mentorship Program](https://github.com/ciphermichael/grc-mentoring-portfolio). Assignment sources are linked in each project; this repository presents my portfolio work separately from the teaching materials.
+[Sources and methodology](SOURCES.md) · [Documentation standards](00-Portfolio-Guide/Portfolio-Standards.md)
 
-**GitHub:** [@fathimanuzha03](https://github.com/fathimanuzha03). Professional contact details and certifications will be added when confirmed.
+**GitHub:** [@fathimanuzha03](https://github.com/fathimanuzha03)
