@@ -1,19 +1,15 @@
-# Sources and attribution
+# Sources and methodology
 
-## Learning programme
+## Scenario attribution
 
-Michael Lawrence (`ciphermichael`) — [Cybersecurity GRC Mentorship Program](https://github.com/ciphermichael/grc-mentoring-portfolio).
+The TechStart business scenario is adapted from Michael Lawrence's [GRC reference repository](https://github.com/ciphermichael/grc-mentoring-portfolio), specifically the [TechStart scenario brief](https://github.com/ciphermichael/grc-mentoring-portfolio/blob/main/Week-01/assignment.md). The source permits adaptation with attribution. The original scenario and source materials are credited to their author.
 
-Week 01 uses the TechStart Inc. scenario from the programme's [assignment](https://github.com/ciphermichael/grc-mentoring-portfolio/blob/main/Week-01/assignment.md). The source README permits adaptation of templates and deliverables for professional use with attribution. This portfolio links to the teaching materials and does not claim authorship of the course or its scenarios.
+## Analysis basis
 
-The folder conventions are informed by the programme. Project summaries, proposed recommendations and portfolio organisation are prepared for this learner's case work.
+The portfolio contains scenario-based GRC analysis and advisory documentation. TechStart is fictional. No live configuration inspection, contract review, control testing, certification or implementation outcome is claimed.
 
-## Technical and regulatory references
+Primary standards-body and regulator references are cited in the documents. Initial research was checked on 3 November 2026; legal and framework references should be revalidated when the documents are revised. Costs and delivery dates are planning estimates.
 
-Primary standards-body and regulator links are provided beside the relevant claims in the deliverables. Sources were checked on 3 November 2026. Check their current versions when revising the analysis; dated advice is not timeless evidence of legal compliance.
+## Document preparation
 
-## Assistance and validation
-
-Initial Week 01 drafting, research and portfolio setup were AI-assisted. The initial documents are drafts awaiting learner validation and mentor review. Future validation, personal reflection and feedback should be recorded as they occur.
-
-Fictional company names, assumed conditions and planning budgets are educational devices. No real customer engagement, control test, certification award, professional qualification or business outcome is claimed.
+Initial research and drafting were AI-assisted. Substantive review by the portfolio owner is pending. This status does not imply external review or management approval. Meaningful revisions should be recorded in each project's change history.
