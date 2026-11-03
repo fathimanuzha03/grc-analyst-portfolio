@@ -12,17 +12,17 @@ This portfolio presents business-focused GRC analysis, framework evaluations and
 
 **Recommendation:** Use ISO 27001 as the primary assurance target, address privacy obligations immediately in parallel, and consider SOC 2 when customer demand supports the additional investment.
 
-[Explore the analysis and key decisions →](Week-01/README.md)  
-[Read the GRC landscape report →](Week-01/Deliverables/TechStart-GRC-Landscape-Report-v1.0.md)
+[Explore the analysis and key decisions →](Projects/TechStart-GRC-Strategy/README.md)  
+[Read the GRC landscape report →](Projects/TechStart-GRC-Strategy/TechStart-GRC-Landscape-Report-v1.0.md)
 
 ## Document portfolio
 
 | Document | Purpose |
 |---|---|
-| [GRC landscape analysis](Week-01/Deliverables/TechStart-GRC-Landscape-Report-v1.0.md) | Assess obligations, governance gaps and the proposed 12-month programme |
-| [Framework comparison](Week-01/Deliverables/Framework-Comparison-Table.md) | Compare ISO 27001, NIST CSF, SOC 2, GDPR and PCI DSS |
-| [Framework priority recommendation](Week-01/Deliverables/Framework-Priority-Recommendation.md) | Explain investment priorities, trade-offs, costs and dependencies |
-| [GRC operating model](Week-01/Deliverables/GRC-Team-Structure-Recommendation.md) | Define roles, reporting lines, three lines of defence and RACI |
+| [GRC landscape analysis](Projects/TechStart-GRC-Strategy/TechStart-GRC-Landscape-Report-v1.0.md) | Assess obligations, governance gaps and the proposed 12-month programme |
+| [Framework comparison](Projects/TechStart-GRC-Strategy/Framework-Comparison-Table.md) | Compare ISO 27001, NIST CSF, SOC 2, GDPR and PCI DSS |
+| [Framework priority recommendation](Projects/TechStart-GRC-Strategy/Framework-Priority-Recommendation.md) | Explain investment priorities, trade-offs, costs and dependencies |
+| [GRC operating model](Projects/TechStart-GRC-Strategy/GRC-Team-Structure-Recommendation.md) | Define roles, reporting lines, three lines of defence and RACI |
 
 ## Approach
 
@@ -38,6 +38,6 @@ Establish the business context, distinguish evidence from assumptions, assess ap
 
 **Case context:** TechStart is fictional. The documents are scenario-based analysis; they do not represent a real client engagement or implemented controls. The initial document set is version 1.0, with substantive review pending.
 
-[Sources and methodology](SOURCES.md) · [Documentation standards](00-Portfolio-Guide/Portfolio-Standards.md)
+[Sources and methodology](SOURCES.md)
 
 **GitHub:** [@fathimanuzha03](https://github.com/fathimanuzha03)
