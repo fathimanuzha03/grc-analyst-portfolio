@@ -1,43 +1,29 @@
 # Fathima Nuzha M | Cybersecurity GRC Portfolio
+**Governance, Risk and Compliance — analysis, decisions and documentation**
 
-**Governance, Risk and Compliance — analysis and documentation**
+Two flagship simulation projects show how security concerns become stakeholder decisions, owned actions and verifiable evidence. Start with an executive brief; use the supporting registers and assessments to challenge the recommendation.
 
-This portfolio presents business-focused GRC analysis, framework evaluations and advisory documents. It brings together compliance landscape assessments, prioritised recommendations, governance structures and implementation roadmaps.
+## Flagship simulation projects
+| Project | Business decision | What is inside |
+|---|---|---|
+| [ISO 27001 Readiness and Remediation](Projects/ISO27001-Readiness-and-Remediation/README.md) | Fund a staged security programme and decide when external assessment is justified | Executive brief, scope/method, 12-risk register and heatmap, focused control review, costed roadmap, synthetic evidence checks and review record |
+| [Third-Party Risk and Operational Resilience](Projects/Third-Party-Risk-and-Resilience/README.md) | Hold, conditionally release, restrict or transition sensitive-data suppliers | Executive brief, policy, 8-supplier register/matrix, 3 completed simulation assessments, 15-finding tracker, contract/incident/exit playbook and review record |
 
-## Featured project — TechStart GRC strategy
+Each project is self-contained. Its evidence, references, assumptions and review checklist sit in its own folder.
 
-**Business context:** A growing UK SaaS company needs a formal security programme and credible evidence for enterprise procurement.
+## A short route for reviewers
+1. Open the project's **Executive decision brief** for the recommendation, options, budget and requested authority.
+2. Challenge the supporting risk/evidence assessment.
+3. Check owners, dates, release conditions and measures in the action plan.
+4. Record approve, reject or conditions in the decision record. No stakeholder sign-off is claimed in advance.
 
-**Analysis:** Regulatory obligations, security governance gaps, framework suitability, delivery priorities and accountability.
+## What the work demonstrates
+Risk prioritisation; framework interpretation; evidence-based assurance; supplier challenge; cost and capacity planning; accountability; and clear executive reporting.
 
-**Recommendation:** Use ISO 27001 as the primary assurance target, address privacy obligations immediately in parallel, and consider SOC 2 when customer demand supports the additional investment.
+**Simulation status:** fictional companies and constructed evidence are labelled. Calculations, document links and traceability were checked. No real client engagement, operational control test, certification, supplier commitment or stakeholder approval is implied. Initial preparation was AI-assisted; reviewer validation remains pending.
 
-[Explore the analysis and key decisions →](Projects/TechStart-GRC-Strategy/README.md)  
-[Read the GRC landscape report →](Projects/TechStart-GRC-Strategy/TechStart-GRC-Landscape-Report-v1.0.md)
+## Earlier strategy analysis
+[TechStart GRC Strategy](Projects/TechStart-GRC-Strategy/README.md) provides the earlier compliance-landscape analysis and framework recommendation. Its original documents are retained separately.
 
-## Document portfolio
-
-| Document | Purpose |
-|---|---|
-| [GRC landscape analysis](Projects/TechStart-GRC-Strategy/TechStart-GRC-Landscape-Report-v1.0.md) | Assess obligations, governance gaps and the proposed 12-month programme |
-| [Framework comparison](Projects/TechStart-GRC-Strategy/Framework-Comparison-Table.md) | Compare ISO 27001, NIST CSF, SOC 2, GDPR and PCI DSS |
-| [Framework priority recommendation](Projects/TechStart-GRC-Strategy/Framework-Priority-Recommendation.md) | Explain investment priorities, trade-offs, costs and dependencies |
-| [GRC operating model](Projects/TechStart-GRC-Strategy/GRC-Team-Structure-Recommendation.md) | Define roles, reporting lines, three lines of defence and RACI |
-
-## Approach
-
-Establish the business context, distinguish evidence from assumptions, assess applicable obligations, compare practical options and document recommendations with clear owners and dependencies. Source references and document status are recorded alongside the analysis.
-
-## Areas demonstrated
-
-- Security governance and risk ownership.
-- Regulatory applicability and privacy scoping.
-- Framework evaluation and assurance strategy.
-- Programme planning and executive reporting.
-- Organisational design and responsibility mapping.
-
-**Case context:** TechStart is fictional. The documents are scenario-based analysis; they do not represent a real client engagement or implemented controls. The initial document set is version 1.0, with substantive review pending.
-
-[Sources and methodology](SOURCES.md)
-
-**GitHub:** [@fathimanuzha03](https://github.com/fathimanuzha03)
+**Author:** Fathima Nuzha M · [GitHub profile](https://github.com/fathimanuzha03)  
+**Flagship project release:** 18 November 2026 · Version 1.0
