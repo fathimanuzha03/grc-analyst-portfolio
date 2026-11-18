@@ -20,7 +20,7 @@ Each project is self-contained. Its evidence, references, assumptions and review
 ## What the work demonstrates
 Risk prioritisation; framework interpretation; evidence-based assurance; supplier challenge; cost and capacity planning; accountability; and clear executive reporting.
 
-**Simulation status:** fictional companies and constructed evidence are labelled. Calculations, document links and traceability were checked. No real client engagement, operational control test, certification, supplier commitment or stakeholder approval is implied. Initial preparation was AI-assisted; reviewer validation remains pending.
+**Simulation status:** fictional companies and constructed evidence are labelled. Calculations, document links and traceability were checked. No real client engagement, operational control test, certification, supplier commitment or stakeholder approval is implied. 
 
 ## Earlier strategy analysis
 [TechStart GRC Strategy](Projects/TechStart-GRC-Strategy/README.md) provides the earlier compliance-landscape analysis and framework recommendation. Its original documents are retained separately.
