@@ -1,55 +1,49 @@
 # Prioritised risk register
-**Register:** X-RR01 | **Assessment:** scenario estimates | **Acceptance:** none approved
+**Register:** H-RR01 | **Status:** simulation estimates; no risk acceptance approved
 
-Scoring and authority are defined in [Scope and method](02-Scope-and-Method.md). “Current” is an initial estimate based on stated safeguards; unknown safeguards receive no assumed credit. It is not a pure no-controls inherent baseline. Target scores depend on successful implementation and evidence.
+| Risk | Event and consequence | L | I | Score | Band | Proposed owner | Treatment |
+|---|---|---:|---:|---:|---|---|---|
+| H-R01 | A shared, broadly scoped connector secret permits cross-customer booking access | 4 | 5 | 20 | Critical | Platform Lead | H-A01 |
+| H-R02 | Active support accounts belonging to leavers permit unauthorised access | 4 | 4 | 16 | High | IT Lead | H-A02 |
+| H-R03 | An untested tenant boundary exposes another operator's appointment records | 3 | 5 | 15 | High | Engineering Lead | H-A03 |
+| H-R04 | Backup frequency and restoration delay exceed the enterprise service's recovery needs | 3 | 5 | 15 | High | Operations Lead | H-A04 |
+| H-R05 | Unreviewed configuration releases or dependency changes corrupt service behaviour | 3 | 4 | 12 | High | Engineering Lead | H-A05 |
+| H-R06 | Short-lived, unowned audit events delay investigation of access misuse | 3 | 4 | 12 | High | Security Lead | H-A06 |
+| H-R07 | Undefined risk authority allows exceptions to persist without a management decision | 3 | 4 | 12 | High | Security Lead | H-A07 |
+| H-R08 | Booking and contact records are retained beyond a justified business period | 3 | 3 | 9 | Moderate | Privacy Lead | H-A08 |
+| H-R09 | A partner connector outage prevents timely depot appointment updates | 3 | 3 | 9 | Moderate | Partnerships Lead | H-A09 |
+| H-R10 | Recovery depends on an unavailable primary identity service | 2 | 5 | 10 | High | IT Lead | H-A10 |
 
-| ID | Risk event and consequence | Basis | L | I | Score | Rating | Proposed accountable owner | Treatment |
-|---|---|---|---:|---:|---:|---|---|---|
-| X-R01 | Unrestricted production identities enable extraction or alteration of financial records | S02 | 4 | 5 | 20 | Critical | Head of IT | X-A01 |
-| X-R02 | No formal assessment leaves material security exposures unowned | S01 | 4 | 5 | 20 | Critical | CISO | X-A02 |
-| X-R03 | Untested recovery leaves Xown unable to restore a critical reporting service | S05 | 4 | 5 | 20 | Critical | Head of IT | X-A03 |
-| X-R04 | Irregular log review delays detection and containment | S03 | 4 | 4 | 16 | High | Head of IT | X-A04 |
-| X-R05 | Unreviewed suppliers expose confidential data and service dependencies | S06 | 4 | 4 | 16 | High | CISO | X-A05 |
-| X-R06 | Informal vulnerability handling leaves exploitable systems exposed | S04 | 3 | 4 | 12 | High | Head of IT | X-A06 |
-| X-R07 | Production changes can damage report integrity without demonstrable independent checks | U01 | 3 | 4 | 12 | High | Development Lead | X-A07 |
-| X-R08 | Unverified response arrangements delay incident ownership and customer communication | U02 | 3 | 4 | 12 | High | CISO | X-A08 |
-| X-R09 | Unrecorded awareness activity prevents targeted follow-up and assurance | S07 | 3 | 3 | 9 | Moderate | HR Lead | X-A09 |
-| X-R10 | Unlogged visitors gain access to confidential office information | S08 | 2 | 3 | 6 | Moderate | Office Manager | X-A10 |
-| X-R11 | Unverified asset ownership causes incomplete access, patch and retention coverage | U03 | 3 | 3 | 9 | Moderate | Head of IT | X-A11 |
-| X-R12 | Unverified privacy terms and data flows lead to processing outside documented requirements | U04 | 3 | 3 | 9 | Moderate | Head of Legal | X-A12 |
+**Distribution:** 1 Critical; 7 High; 2 Moderate; 0 Low. H-R01/H-R02/H-R04/H-R05 have displayed exhibit support. Other conditions are defined in the constructed scenario and require further testing.
 
-## Treatment targets and acceptance
-| Risk | Target L × I | Target score / band | Action | Acceptance route after testing |
-|---|---|---|---|---|
-| X-R01 | 2 × 5 | 10 / High | X-A01 | CEO approval required for any target High residual risk |
-| X-R02 | 2 × 4 | 8 / Moderate | X-A02 | CISO acceptance within approved appetite |
-| X-R03 | 2 × 5 | 10 / High | X-A03 | CEO approval required for any target High residual risk |
-| X-R04 | 2 × 4 | 8 / Moderate | X-A04 | CISO acceptance within approved appetite |
-| X-R05 | 2 × 4 | 8 / Moderate | X-A05 | CISO acceptance within approved appetite |
-| X-R06 | 2 × 4 | 8 / Moderate | X-A06 | CISO acceptance within approved appetite |
-| X-R07 | 2 × 4 | 8 / Moderate | X-A07 | CISO acceptance within approved appetite |
-| X-R08 | 2 × 4 | 8 / Moderate | X-A08 | CISO acceptance within approved appetite |
-| X-R09 | 2 × 3 | 6 / Moderate | X-A09 | CISO acceptance within approved appetite |
-| X-R10 | 1 × 3 | 3 / Low | X-A10 | Service-owner review |
-| X-R11 | 2 × 3 | 6 / Moderate | X-A11 | CISO acceptance within approved appetite |
-| X-R12 | 2 × 3 | 6 / Moderate | X-A12 | Legal confirms duties; management cannot waive legal requirements |
+## Target risk after successful treatment
+| Risk | Target L × I | Score / band | Required closure |
+|---|---|---|---|
+| H-R01 | 2 × 4 | 8 / Moderate | H-A01 evidence reviewed; forecast only |
+| H-R02 | 1 × 4 | 4 / Low | H-A02 evidence reviewed; forecast only |
+| H-R03 | 2 × 4 | 8 / Moderate | H-A03 evidence reviewed; forecast only |
+| H-R04 | 2 × 4 | 8 / Moderate | H-A04 evidence reviewed; forecast only |
+| H-R05 | 2 × 3 | 6 / Moderate | H-A05 evidence reviewed; forecast only |
+| H-R06 | 2 × 3 | 6 / Moderate | H-A06 evidence reviewed; forecast only |
+| H-R07 | 2 × 3 | 6 / Moderate | H-A07 evidence reviewed; forecast only |
+| H-R08 | 2 × 3 | 6 / Moderate | H-A08 evidence reviewed; forecast only |
+| H-R09 | 2 × 3 | 6 / Moderate | H-A09 evidence reviewed; forecast only |
+| H-R10 | 1 × 4 | 4 / Low | H-A10 evidence reviewed; forecast only |
 
-Every action's status is **Proposed**. Treat the target scores as forecasts, not measured residual risk. Retain the current risk until [closure evidence](06-Evidence-and-Validation.md) is accepted.
+Target scores are not current residual risk and have not been accepted. Review impact as well as likelihood when new evidence changes the business consequence.
 
-**Sensitivity:** X-R07/X-R08/X-R11/X-R12 rely on unknowns. Re-score after discovery; do not present the missing evidence as confirmed control failure. If X-R07 likelihood falls from 3 to 2 after verified change evidence, its score becomes 8 (Moderate), changing its treatment urgency.
-
-## Portfolio heatmap
-Numbers are risk IDs, not incident counts. C = Critical; H = High; M = Moderate; L = Low.
-
+## Current prioritisation matrix
 | Likelihood ↓ / Impact → | 1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|---|
 | 5 | — | — | — | — | — |
-| 4 | — | — | — | H: R04, R05 | C: R01, R02, R03 |
-| 3 | — | — | M: R09, R11, R12 | H: R06, R07, R08 | — |
-| 2 | — | — | M: R10 | — | — |
+| 4 | — | — | — | R02: High | R01: Critical |
+| 3 | — | — | R08, R09: Moderate | R05, R06, R07: High | R03, R04: High |
+| 2 | — | — | — | — | R10: High |
 | 1 | — | — | — | — | — |
 
-**Totals:** Critical 3; High 5; Moderate 4; Low 0. These are management prioritisation counts, not an ISO compliance percentage.
+## Review rules
+Security Lead reviews urgent treatments weekly and the full register monthly. Reassess after a connector, customer boundary, service commitment or identity dependency changes. A failed test keeps the associated risk open.
 
-## Review and escalation
-CISO reviews Critical/High actions weekly and the full register monthly. Reassess after an incident, significant system/supplier change, failed test or new customer obligation. Each live acceptance record must include risk ID, rationale, compensating controls, accepting authority, expiry and review trigger. Critical issues need immediate containment and CEO attention.
+Example sensitivity: verified tenant isolation could reduce H-R03 likelihood from 3 to 2, moving score 15 to 10. It would still be High and require management treatment/acceptance under the proposed method.
+
+[Assessment method](02-Scope-and-Method.md) · [Remediation owners and tests](05-Remediation-and-Delivery-Plan.md)

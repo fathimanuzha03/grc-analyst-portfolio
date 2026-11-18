@@ -1,28 +1,21 @@
-# ISO 27001 Readiness and Remediation
-**Xown Solutions Limited | Prepared by Fathima Nuzha M | 18 November 2026 | Version 1.0**
+# HarbourRoute: ISO 27001 Readiness and Remediation
+**GRC simulation project | Fathima Nuzha M | 18 November 2026 | Version 2.0**
 
-**Simulation project — fictional organisation; proposed stakeholder decisions.**
+## Decision in one minute
+HarbourRoute Systems is a fictional 76-person UK logistics software business serving 52 transport operators. A proposed enterprise rollout requires a credible security roadmap within 90 days. The service handles appointment bookings, depot gate references and driver business-contact details.
 
-> **Management recommendation:** fund a staged remediation programme and share a conditional certification roadmap within 60 days. Do not describe the organisation as audit-ready.
+**Recommendation:** approve an £84,000 resource ceiling in stages, restrict partner credentials immediately and prove recovery before extending enterprise service commitments. Target an independent readiness decision in month 9; certification is not a promised outcome.
 
-## The decision in one minute
-Xown's £2.4 million annual opportunity depends on credible security assurance. The supplied case describes uncontrolled production access, no formal risk assessment and no tested recovery plan. A certificate is a later outcome; management can act now on the risks and procurement deadline.
+The simulation identifies **10 risks: 1 Critical, 7 High and 2 Moderate**. Four analytical checks use synthetic integration, identity, release and recovery records. Findings include one credential reused across two connector routes and recovery results that fail the proposed service objectives.
 
-Request a **£120,000 first-year planning ceiling**, released through three gates. Reserve named implementation capacity. Target external assessment around months 11–12 only after evidence supports readiness. Estimates require quotations and management agreement.
-
-| What a reviewer needs | Read |
+| Reviewer need | Document |
 |---|---|
-| Decision, options, funding and escalation | [Executive decision brief](01-Executive-Decision.md) |
-| Business boundary, responsibilities and scoring | [Scope and method](02-Scope-and-Method.md) |
-| Twelve prioritised risks and proposed treatments | [Risk register](03-Risk-Register.md) |
-| Seven management-system areas and sixteen control topics | [Control gap assessment](04-Control-Gap-Assessment.md) |
-| Owned actions, gates, costs and operating measures | [Remediation and delivery plan](05-Remediation-and-Delivery-Plan.md) |
-| Evidence inventory, reproducible checks and acceptance tests | [Evidence and validation](06-Evidence-and-Validation.md) |
-| References, limitations, review and decision record | [Sources and review](07-Sources-and-Review.md) |
+| Options, funding and requested decisions | [Executive brief](01-Executive-Decision.md) |
+| Business scenario, scope and scoring | [Scope and method](02-Scope-and-Method.md) |
+| Owned risks, ratings and treatment targets | [Risk register](03-Risk-Register.md) |
+| Management-system review and 12 control topics | [Control assessment](04-Control-Gap-Assessment.md) |
+| Actions, resources, milestones and escalation | [Delivery plan](05-Remediation-and-Delivery-Plan.md) |
+| Synthetic exhibits, calculations and acceptance tests | [Evidence and validation](06-Evidence-and-Validation.md) |
+| Primary references, limits and review record | [Sources and review](07-Sources-and-Review.md) |
 
-## What this project demonstrates
-Business-to-risk translation; transparent scoring; control-to-evidence mapping; investment prioritisation; management reporting; and a go/no-go decision that depends on evidence.
-
-**Assessment outcome:** 12 scenario risks: 3 Critical, 5 High and 4 Moderate. These are analytical estimates, not measured incident probabilities. Four focused checks were performed against explicitly synthetic exhibits; implementation tests remain proposed.
-
-**Case boundary:** fictional organisation adapted from an attributed reference scenario. Documents and analysis are complete for review; owner validation, real-world control testing and management approval have not occurred. This is a focused readiness assessment, not a complete 93-control Statement of Applicability or a certification audit. All supporting material is inside this folder.
+**Status:** analysis and documentation prepared for portfolio review. Business facts and evidence are constructed for this simulation; no live client engagement, implementation, external audit or management approval is claimed. This focused review is not a complete Statement of Applicability. All supporting material is inside this folder.

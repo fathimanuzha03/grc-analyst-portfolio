@@ -1,77 +1,55 @@
-# Remediation, funding and delivery plan
-**Clock:** day 0 is programme approval, not the publication date | **All actions:** proposed
+# Remediation and staged delivery
+**Day 0:** programme approval | **All owners, objectives and prices:** proposed simulation assumptions
 
-## Owned remediation backlog
-Days are calendar days from approval; immediate incident containment follows the incident process.
+## Action backlog
+| Action | Outcome | Owner | Due | Evidence / pass condition |
+|---|---|---|---:|---|
+| H-A01 | Separate connector credentials, limit scope and rotate shared material | Platform Lead | Day 10 | T01: unique route credentials, least scope and revoked old secret |
+| H-A02 | Reconcile leavers and support access; remove unjustified rights | IT Lead | Day 10 | T02: all leavers disabled or specifically authorised and time-limited |
+| H-A03 | Test tenant-boundary and configuration controls, including negative cases | Engineering Lead | Day 45 | T03: no unauthorised cross-tenant access; independent reviewer checks failures |
+| H-A04 | Agree BIA objectives; revise backup schedule and demonstrate full service restore | Operations Lead | Day 60 | T04: measured RTO≤6h and RPO≤2h, subject to business approval |
+| H-A05 | Align configuration/application approvals, dependency coverage and rollback | Engineering Lead | Day 45 | T05: all sampled changes approved, tested and reversible |
+| H-A06 | Define audit sources, investigation-driven retention and triage ownership | Security Lead | Day 30 | T06: authorised test event traced from generation to escalation |
+| H-A07 | Approve risk method, scope, policy, owners and exception authority | Security Lead | Day 30 | T07: consistent approved records; no unowned material risk |
+| H-A08 | Validate processing purpose, customer instructions and deletion schedule | Privacy Lead | Day 45 | T08: approved rules and representative deletion/retention test |
+| H-A09 | Map partner dependencies, service responsibilities and outage escalation | Partnerships Lead | Day 60 | T09: contracts/contacts mapped and connector failure exercised |
+| H-A10 | Establish protected emergency access independent of primary identity | IT Lead | Day 30 | T10: authorised recovery access tested without normal SSO |
 
-| Action | Specific outcome | Proposed owner | Due | Dependencies | Completion evidence |
-|---|---|---|---:|---|---|
-| X-A01 | Inventory privileged accounts; remove unjustified standing production access; use approved time-limited elevation and workload identities | Head of IT | 30 | Service owners, emergency access process | T01 |
-| X-A02 | Approve scope, policy, risk method, treatment ownership and control-selection work; confirm buyer criteria | CISO | 45 | CEO sponsorship, Legal input | T02 |
-| X-A03 | Complete BIA; agree recovery objectives; protect backups and execute an isolated restore | Head of IT | 90 | Service dependencies and recovery budget | T03 |
-| X-A04 | Define log sources, alert owners, triage windows, retention and escalation; prove an end-to-end alert | Head of IT | 60 | Identity/asset inventory | T04 |
-| X-A05 | Tier AWS/Salesforce/Zendesk services; inspect relevant reports, scope, customer obligations and contracts | CISO | 75 | Supplier inventory, Legal | T05 |
-| X-A06 | Establish vulnerability coverage, risk triage and remediation SLAs; retest overdue critical items | Head of IT | 75 | Asset coverage | T06 |
-| X-A07 | Require risk-based independent approval and rollback evidence for production changes | Development Lead | 60 | Pipeline and emergency-change owners | T07 |
-| X-A08 | Define incident authority, evidence handling, communications and escalation; exercise the workflow | CISO | 90 | Legal and customer contact paths | T08 |
-| X-A09 | Reconcile training population; retain valid completion and follow up exceptions | HR Lead | 60 | Current staff/contractor roster | T09 |
-| X-A10 | Authorise and record visitors, protect sensitive workspaces and verify escort practice | Office Manager | 45 | Office owner, physical boundary | T10 |
-| X-A11 | Build owned asset/service/data-flow inventories and change triggers | Head of IT | 30 | Team representatives | T11 |
-| X-A12 | Validate processing roles, agreements, retention and transfer arrangements; document applicable requirements | Head of Legal | 60 | Data flows, customer/supplier terms | T12 |
+Close actions only after the required evidence is reviewed. Targets do not establish successful implementation.
 
-The actions address all 12 registered risks. Funding and owners remain unapproved. If an action is late, its risk stays open; CISO reports the consequence and required decision rather than changing its target date silently.
-
-## Budget reconciliation
-Figures are illustrative planning allocations in GBP; they are not quotations. Values include existing staff opportunity cost and incremental external spend.
-
-| Workstream | Existing staff effort | Incremental spend reserve | Total |
+## Resource reconciliation
+| Workstream | Allocated staff effort | Incremental reserve | Total |
 |---|---:|---:|---:|
-| Access and asset controls | £20,000 | £12,000 | £32,000 |
-| Vulnerability, monitoring and controlled change | £18,000 | £12,000 | £30,000 |
-| Recovery and incident readiness | £8,000 | £4,000 | £12,000 |
-| Supplier/privacy specialist work | £5,000 | £5,000 | £10,000 |
-| Governance and awareness | £8,000 | £2,000 | £10,000 |
-| Independent audit/certification reserve | £0 | £12,000 | £12,000 |
-| Unallocated contingency; CEO release only | £0 | £14,000 | £14,000 |
-| **Total** | **£59,000** | **£61,000** | **£120,000** |
+| Identity and connector isolation | £16,000 | £8,000 | £24,000 |
+| Secure integrations and release process | £12,000 | £6,000 | £18,000 |
+| Recovery and operational evidence | £8,000 | £8,000 | £16,000 |
+| Privacy and governance | £7,000 | £5,000 | £12,000 |
+| Independent assessment reserve | £0 | £8,000 | £8,000 |
+| Contingency; management release | £3,000 | £3,000 | £6,000 |
+| **Total** | **£46,000** | **£38,000** | **£84,000** |
 
-The workstream view and £30k/£55k/£35k stage releases describe the same £120k envelope; do not add them. Quotes, VAT, new permanent salaries and major architectural rebuilding require separate confirmation. Contingency is part of the ceiling, not an extra percentage.
+This is the same envelope as the £20k/£36k/£28k stage releases, not additional funding. Contingency includes reserved staff capacity. VAT, permanent hiring and major platform replacement are excluded. Obtain quotes and confirm staff availability.
 
-## Roadmap and decision gates
-| Window | Milestones | Owner | Gate to proceed |
-|---|---|---|---|
-| Days 0–30 | Confirm scope/owners, contain production-access exposure, inventory dependencies | CEO/CISO/IT | Scope and urgent access decisions recorded |
-| Days 31–60 | Approve treatment plan and control-selection method; confirm resources; share roadmap with buyer | CISO/Sales/Legal | Procurement criteria acknowledged; Gate 2 funding decision |
-| Months 3–6 | Operate technical safeguards; complete BIA, supplier reviews, incident and restore exercises | IT/Legal/HR | T01–T12 evidence reviewed; no overdue Critical risk without CEO escalation |
-| Months 7–9 | Complete full SoA and management-system records; internal audit by an independent assessor; resolve findings | CISO / independent auditor | Management review and Gate 3 funding decision |
-| Months 10–12 | Assess external readiness; Stage 1 then Stage 2 only if appropriate | CISO / certification body | Record readiness decision, resolve assessment findings; certificate only if awarded |
-
-Management review begins during the programme; it is not postponed until the final month. The reference contains conflicting timing hints; this project uses a 60-day roadmap deadline and a conditional 12-month external-assessment target. No audit booking or inevitable certificate award is asserted.
-
-## RACI for recurring decisions
-A = one accountable owner; R = performs; C = consulted; I = informed.
-
-| Activity | CEO | CISO | IT | Legal | HR / service owners | Independent auditor |
-|---|---|---|---|---|---|---|
-| Risk appetite and funding | A | R | C | C | I | I |
-| Risk assessment and treatment tracking | I | A/R | R | C | R | I |
-| Technical remediation | I | C | A/R | C | C | I |
-| Processing and contract review | I | C | R | A/R | C | I |
-| Independent internal audit execution | A | C | C | C | C | R |
-
-CEO commissions independent audit; CISO coordinates evidence and cannot independently audit their own implementation. Operational risk acceptance follows [the method](02-Scope-and-Method.md), not this delivery RACI alone.
-
-## Operating dashboard
-| Measure | Baseline | Proposed target / escalation |
+## Milestones
+| Period | Milestone | Gate |
 |---|---|---|
-| Critical scenario risks | 3 estimated | No unowned Critical risk from day 10; all overdue containment decisions escalated |
-| Justified privileged identities | Unknown live baseline | 100% inventoried and owner-reviewed by day 30 |
-| Critical supplier reviews | 0 formal reviews described | 3/3 completed or explicitly escalated by day 75 |
-| Recovery capability | Backups configured; restore capability unverified | Tested recovery meets management-approved objectives by day 90 |
-| Training completion evidence | No records in scenario | At least 95% of in-scope population with valid records by day 60; remainder owned |
-| Risk acceptance expiry | No live register | 100% exceptions have owner, authority and expiry |
+| Days 0–30 | Contain access exposure, approve scope/risk authority, test emergency access | Managing Director authorises next tranche |
+| Days 31–60 | Tenant/configuration controls and recovery retest | Rollout scope reflects demonstrated service capability |
+| Days 61–90 | Customer roadmap, complete control-selection plan and recurring evidence | Prospect requirements and remaining exceptions explicitly acknowledged |
+| Months 4–6 | Sustain operations; complete full SoA and ISMS records | Internal evidence review and independent internal audit readiness |
+| Months 7–9 | Independent internal audit, correction and management review | Decide whether and when to engage a certification body |
 
-Targets are proposals. Synthetic exercise results in the evidence file are not live baseline metrics.
+No certificate, audit booking or customer acceptance is assumed.
 
-## Delivery risks and mitigations
-Capacity competition: protect named implementation hours before release. Supplier delays: request evidence by day 10 and escalate missing reports rather than infer conformity. Tool dependence: implement proportionate controls before selecting products. Audit scheduling: book only after readiness forecast and scoped quotations; maintain a buyer-agreed fallback milestone. Gate failure: hold later funding where appropriate, retain containment and privacy duties, and rebaseline transparently.
+## Accountability
+Managing Director is accountable for funding and material acceptance. Security Lead is accountable for risk coordination. Named action owners are accountable for delivery in their remit. Privacy Lead advises on obligations and does not grant unlawful exceptions. An independent assessor tests the programme rather than reviewing their own implementation work.
+
+## Management dashboard
+- Critical-risk containment: H-R01 has an authorised owner and dated action from day 1.
+- Leaver reconciliation: 100% of departed identities reviewed; unjustified access removed.
+- Connector scope: all four routes use approved scope and attributable credentials.
+- Change evidence: all production release types subject to the same risk-based approval rules.
+- Recovery: actual retest results compared with approved objectives.
+- Exceptions: 100% have authority, conditions and expiry.
+
+Primary schedule threats are engineering availability, tenant-test failures and unproven recovery. Preserve containment, narrow commitments and re-cost specific changes when a gate fails; do not hide slippage by changing the baseline silently.

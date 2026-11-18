@@ -1,54 +1,50 @@
 # Executive decision brief
-**Decision ID:** X-D01 | **Sponsor:** Caroline Marsh, CEO | **Status:** Proposed; no approval recorded
+**Decision:** H-D01 | **Accountable role proposed:** Managing Director | **Status:** Proposed
 
-## Recommendation
-Approve a staged ISO 27001 readiness programme, with immediate containment of privileged-access risk and a credible customer roadmap by day 60. The £2.4 million figure is the opportunity's annual contract value from the case, not guaranteed revenue or a quantified loss estimate.
+## Recommendation and business value
+Fund a staged security programme before promising enterprise availability or audit readiness. The fictional enterprise opportunity is worth £540,000 in first-year revenue if won; this is a scenario assumption, not guaranteed income or a quantified loss forecast.
 
-Xown develops financial reporting software for 180 UK/EU businesses with 120 staff. The case states that Henderson Financial Group will accept certification from a UKAS-accredited certification body or a confirmed roadmap within 60 days. Sales must confirm scope, milestone expectations and acceptance in writing.
+The board needs a credible 90-day roadmap. HarbourRoute's immediate exposure comes from partner credentials, leaver accounts, tenant boundaries and recovery dependence. A policy pack alone would not contain those risks.
 
-## Business exposure
-| Priority | Risk | Evidence basis | Management consequence |
-|---|---|---|---|
-| 1 | X-R01: production access misuse; score 20 | Scenario says developers have direct database access without PAM | Financial records may be changed or extracted without adequate restriction |
-| 2 | X-R02: unowned security exposure; score 20 | No formal risk assessment | Leadership cannot demonstrate consistent treatment or acceptance |
-| 3 | X-R03: recovery failure; score 20 | Backups exist; no DR plan or BIA | Availability and customer commitments cannot be substantiated |
-| 4 | X-R04: late detection; score 16 | CloudTrail exists; reviews are irregular | An incident may persist before intervention |
-| 5 | X-R05: unassessed suppliers; score 16 | No assurance review of three critical providers | Unexamined dependencies can undermine service and contract commitments |
-
-Scores use the locally defined likelihood × impact method in [the risk register](03-Risk-Register.md). Control existence and effectiveness remain distinct.
-
-## Options considered
-| Option | First-year planning envelope | Consequence | Recommendation |
+## Options
+| Option | Planning envelope | Consequence | Recommendation |
 |---|---:|---|---|
-| A: documents only, defer operating controls | £15k–£25k | A roadmap could be written, but important risks and audit evidence gaps remain | Reject |
-| B: staged remediation and readiness | £120k ceiling | Addresses priority exposure and creates evidence for a later independent assessment | Select |
-| C: ISO and a parallel SOC 2 engagement | £160k–£200k | Additional assurance work before a demonstrated buyer need; greater capacity pressure | Defer |
+| A: documentation-only procurement response | £10k–£15k | Produces a plan without resolving material access/recovery exposure | Reject |
+| B: access containment, recovery validation and staged ISMS readiness | £84k ceiling | Addresses operational blockers and establishes accountable risk treatment | Select |
+| C: redesign the platform before engaging buyers | £180k–£250k | May address architecture more broadly but exceeds the identified near-term decision need | Defer pending test results |
 
-All option prices are analyst assumptions, not market quotes. Option B includes allocated internal effort; the cost of cash purchases is smaller than the total resource envelope. No ROI is inferred by comparing contract value with these estimates.
+All figures are constructed planning estimates. Option B includes existing staff effort; funding is not an investment-return guarantee.
 
-## Funding and authority requested
-| Release | Ceiling | Management release condition |
+## What needs attention first
+| Risk | Current estimate | Evidence / decision |
+|---|---|---|
+| H-R01 connector credential reuse | 20, Critical | Synthetic integration register has the same secret on two routes with broad scope; separate credentials and restrict scope |
+| H-R02 leaver access | 16, High | Two leavers retain active support accounts in the synthetic roster; disable unjustified access and reconcile identities |
+| H-R03 tenant isolation | 15, High | Negative-test evidence is absent; test before expanding the customer boundary |
+| H-R04 recovery | 15, High | Synthetic recovery is 6h10 with 11h data age; proposed objectives are 6h / 2h |
+| H-R10 identity dependency | 10, High | Recovery credentials rely on the primary identity service; validate protected emergency access |
+
+## Authority and release
+| Stage | Ceiling | Release condition |
 |---|---:|---|
-| Gate 1: days 0–60 | £30,000 | Named CISO sponsor, implementation owners and scope approval |
-| Gate 2: days 61–180 | £55,000 | Day-60 roadmap accepted for procurement review; baseline risks and urgent controls reviewed |
-| Gate 3: days 181–365 | £35,000 | Controls producing records, independent internal audit commissioned and readiness forecast refreshed |
-| **Total** | **£120,000** | No automatic release of later tranches |
+| Days 0–30 | £20,000 | Name owners, agree scope and authorise urgent access restrictions |
+| Days 31–90 | £36,000 | Confirm buyer criteria, treatment plan, service objectives and implementation capacity |
+| Months 4–9 | £28,000 | Review operating records and commission independent assessment only when ready |
+| **Total** | **£84,000** | Later tranches require an explicit management decision |
 
-CEO owns funding and risk appetite. CISO Mark Hassan owns programme coordination. Head of IT David Osei owns technical delivery. Head of Legal Emma Collins owns legal/contract review. Each owner and allocation requires confirmation; these are scenario roles, not actual appointments.
+Managing Director owns funding and Critical/High exception acceptance. Security Lead coordinates the programme. Engineering, Operations and IT implement controls. Privacy Lead validates processing requirements. These are proposed simulation roles, not actual appointments.
 
-## Immediate direction
-Within 10 working days: inventory privileged identities and restrict unnecessary standing production access; identify service/data owners; open the risk register; confirm the procurement deadline. Escalate unresolved critical access issues to the CEO immediately.
+## By day 90
+Require: approved scope and risk method; accountable treatment owners; connector and identity reconciliation; tenant-boundary test results; recovery retest; a full control-selection plan; and a buyer-facing milestone statement.
 
-By day 60: present a signed scope, owner-assigned treatment plan, approved budget, draft control selection, and milestone-based customer roadmap. Customer acceptance does not equal certification.
-
-**External message for use only after approval:** “Xown has approved an ISO/IEC 27001:2022 implementation programme for the financial reporting service. We target independent assessment within 12 months, subject to verified readiness and the certification body's schedule. We can provide the approved scope, milestone plan and verified control information.”
+If recovery or tenant testing fails, narrow the service commitment, fund a specific redesign or defer rollout. Do not relabel a failure as an accepted test.
 
 ## Decision record
-| Decision owner | Response | Conditions / date |
+| Decision | Owner | Response |
 |---|---|---|
-| CEO: budget, appetite and sponsorship | Pending | To be recorded |
-| CISO: ownership and readiness forecast | Pending | To be recorded |
-| Head of IT: implementation capacity | Pending | To be recorded |
-| Head of Legal: obligations and buyer wording | Pending | To be recorded |
+| Approve staged resources and ownership | Managing Director | Pending |
+| Approve proposed RTO 6h / RPO 2h | Operations + business service owner | Pending |
+| Accept time-limited High risk where lawful | Managing Director after Security challenge | Pending; scope, controls and expiry required |
+| Authorise independent external assessment | Managing Director | Separate month-9 readiness decision |
 
-[Supporting plan and cost allocation](05-Remediation-and-Delivery-Plan.md)
+[Costed actions and readiness gates](05-Remediation-and-Delivery-Plan.md)

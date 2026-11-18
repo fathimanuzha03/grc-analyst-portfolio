@@ -1,26 +1,21 @@
-# Third-Party Risk and Operational Resilience
-**DataBridge Corp | Prepared by Fathima Nuzha M | 18 November 2026 | Version 1.0**
+# Northbank Studio: Third-Party Risk and Resilience
+**GRC simulation project | Fathima Nuzha M | 18 November 2026 | Version 2.0**
 
-**Simulation project — fictional organisation; proposed stakeholder decisions.**
+## Decision in one minute
+Northbank Studio Services is a fictional production business with 58 employees and about 190 freelancers engaged over a year. It serves 30 clients through approximately 110 productions annually. A campaign launch in six weeks depends on safe footage review, editing, archive retrieval and delivery.
 
-> **Management recommendation:** hold the AI and HR data migrations, restrict legacy remote support, and release backup activation only after contractual and recovery evidence gates close.
+**Recommendation:** approve a £30,000 60-day supplier-control programme. Block public review links, restrict unmanaged external editing and validate release-critical archive retrieval before relying on it.
 
-## The decision in one minute
-A 400-person analytics business is adding sensitive-data suppliers while an existing support provider has gone three years without reassessment. This simulation turns supplier responses into defensible onboarding decisions, owned remediation and service-continuity actions.
+Six fictional suppliers are modelled: **4 High, 1 Moderate and 1 Low**. Three detailed assessments support twelve remediation findings across the population. Synthetic evidence demonstrates unauthenticated review links and a recovery result that misses the proposed retrieval objective.
 
-Request a **£45,000 90-day planning ceiling** and named business risk owners. Eight suppliers are modelled; four score High, three Moderate and one Low. Three detailed questionnaire assessments support fifteen tracked findings across the supplier population. No actual supplier was contacted or approved.
-
-| Reviewer question | Supporting document |
+| Reviewer need | Supporting document |
 |---|---|
-| What should management approve or hold? | [Executive decision brief](01-Executive-Decision.md) |
-| How are suppliers tiered, scored and governed? | [Risk policy and assessment method](02-Policy-and-Method.md) |
-| Which dependencies need attention first? | [Supplier register and risk matrix](03-Supplier-Register-and-Matrix.md) |
-| What responses and evidence support the decisions? | [Completed simulation assessments](04-Supplier-Assessments.md) |
-| Who closes each condition, at what cost and by when? | [Remediation and decision tracker](05-Remediation-and-Decision-Tracker.md) |
-| How do contracts, incident handling and exit protect delivery? | [Resilience and contract playbook](06-Resilience-and-Contract-Playbook.md) |
-| What was checked, what remains unknown and who signs? | [Evidence, sources and review](07-Evidence-Sources-and-Review.md) |
+| Supplier decisions, options and funding | [Executive brief](01-Executive-Decision.md) |
+| Tiering, scoring, evidence and release rules | [Policy and method](02-Policy-and-Method.md) |
+| Six-supplier register and prioritisation matrix | [Supplier register](03-Supplier-Register-and-Matrix.md) |
+| Three completed simulation assessments | [Supplier assessments](04-Supplier-Assessments.md) |
+| Twelve actions, costs and decision gates | [Remediation tracker](05-Remediation-and-Decision-Tracker.md) |
+| Sharing, recovery, incident and exit instructions | [Operational playbook](06-Resilience-and-Contract-Playbook.md) |
+| Reproducible exhibits, references and review record | [Evidence and sources](07-Evidence-Sources-and-Review.md) |
 
-## Portfolio value
-Demonstrates proportionate supplier oversight; risk scoring with mandatory gates; evidence challenge; UK/EU transfer questions; supplier incident coordination; and a practical exit decision.
-
-**Case boundary:** fictional suppliers and synthetic responses, adapted from an attributed scenario. References to assurance reports describe case claims, not inspected third-party reports. Documentation and calculations are complete for review; no operational remediation, legal sign-off or stakeholder approval is claimed. Everything supporting this project is inside this folder.
+All organisations, responses and evidence records are constructed for this portfolio. No supplier was contacted or approved. Proposed activation gates are not permission to use live assets. Every supporting document is in this folder.

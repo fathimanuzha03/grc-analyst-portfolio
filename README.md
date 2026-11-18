@@ -1,29 +1,30 @@
 # Fathima Nuzha M | Cybersecurity GRC Portfolio
 **Governance, Risk and Compliance — analysis, decisions and documentation**
 
-Two flagship simulation projects show how security concerns become stakeholder decisions, owned actions and verifiable evidence. Start with an executive brief; use the supporting registers and assessments to challenge the recommendation.
+Two simulation projects demonstrate risk prioritisation, evidence analysis and clear stakeholder recommendations. Each uses a fictional business scenario and synthetic records created for this portfolio.
 
-## Flagship simulation projects
-| Project | Business decision | What is inside |
+## Featured projects
+| Project | Business question | Supporting analysis |
 |---|---|---|
-| [ISO 27001 Readiness and Remediation](Projects/ISO27001-Readiness-and-Remediation/README.md) | Fund a staged security programme and decide when external assessment is justified | Executive brief, scope/method, 12-risk register and heatmap, focused control review, costed roadmap, synthetic evidence checks and review record |
-| [Third-Party Risk and Operational Resilience](Projects/Third-Party-Risk-and-Resilience/README.md) | Hold, conditionally release, restrict or transition sensitive-data suppliers | Executive brief, policy, 8-supplier register/matrix, 3 completed simulation assessments, 15-finding tracker, contract/incident/exit playbook and review record |
+| [HarbourRoute — ISO 27001 Readiness and Remediation](Projects/ISO27001-Readiness-and-Remediation/README.md) | Can a logistics scheduling platform support enterprise access and recovery commitments? | 10-risk register, 12 control topics, synthetic integration/identity/recovery/release checks, £84k staged plan and management decision gates |
+| [Northbank Studio — Third-Party Risk and Resilience](Projects/Third-Party-Risk-and-Resilience/README.md) | Can footage, external editing and archive dependencies support a safe campaign release? | 6-supplier register, 3 detailed assessments, 12 findings, sharing/recovery/exit playbook and £30k remediation proposal |
 
-Each project is self-contained. Its evidence, references, assumptions and review checklist sit in its own folder.
+Each project contains eight documents, including its executive brief, scenario and method, registers, assessments, action plan, synthetic evidence and primary references.
 
-## A short route for reviewers
-1. Open the project's **Executive decision brief** for the recommendation, options, budget and requested authority.
-2. Challenge the supporting risk/evidence assessment.
-3. Check owners, dates, release conditions and measures in the action plan.
-4. Record approve, reject or conditions in the decision record. No stakeholder sign-off is claimed in advance.
+## Review route
+1. Read the executive brief for the recommendation, options and resource decision.
+2. Review the supporting evidence and challenge assumptions.
+3. Check owners, closure tests, deadlines and escalation.
+4. Record approve, reject or conditions; proposed stakeholder decisions are not pre-approved.
 
-## What the work demonstrates
-Risk prioritisation; framework interpretation; evidence-based assurance; supplier challenge; cost and capacity planning; accountability; and clear executive reporting.
+## Capabilities demonstrated
+- Risk assessment and business-impact prioritisation.
+- Security governance and accountability.
+- Framework interpretation and control-to-evidence mapping.
+- Supplier challenge, resilience and exit planning.
+- Costed treatment planning and executive communication.
 
-**Simulation status:** fictional companies and constructed evidence are labelled. Calculations, document links and traceability were checked. No real client engagement, operational control test, certification, supplier commitment or stakeholder approval is implied. 
-
-## Earlier strategy analysis
-[TechStart GRC Strategy](Projects/TechStart-GRC-Strategy/README.md) provides the earlier compliance-landscape analysis and framework recommendation. Its original documents are retained separately.
+**Simulation boundary:** these are fictional case studies with constructed evidence. They do not claim real client engagements, production tests, certification, supplier commitments or stakeholder approval. Operational application requires current evidence and appropriate review.
 
 **Author:** Fathima Nuzha M · [GitHub profile](https://github.com/fathimanuzha03)  
-**Flagship project release:** 18 November 2026 · Version 1.0
+**Current release:** 18 November 2026 · Version 2.0

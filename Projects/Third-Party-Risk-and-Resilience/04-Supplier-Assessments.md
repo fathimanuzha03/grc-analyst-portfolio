@@ -1,66 +1,62 @@
 # Completed simulation supplier assessments
-**Assessment owner proposed:** GRC Analyst; CISO challenges findings; business owner decides within policy.
+All response summaries below are deliberately constructed for this portfolio. They are the supporting exhibits, not summaries of confidential supplier documents. No actual questionnaires, certificates or audit reports were received.
 
-The tables are completed analytical assessments of explicitly synthetic responses. S-* denotes the source scenario; D-* denotes constructed response summaries below. No vendor questionnaire was actually sent and no real certificate, SOC report, architecture export or contract was inspected. Rating 3 means complete support within the simulated exhibit, not independent verification in reality.
+Domain ratings are evidence judgements for the proposed use. [Method and weights](02-Policy-and-Method.md)
 
-## Common questionnaire
-Q1: Can privileged/user access be attributed and controlled? Q2: Are data use, location, protection and transfer requirements satisfied? Q3: Is assurance/testing scoped, current enough for the risk and reviewed for exceptions? Q4: Can incidents be escalated and investigated promptly? Q5: Can the customer's service/data be recovered and exited? Q6: Are downstream providers and changes controlled?
+## N-V01 — FrameRelay
+| Domain | Weight | Rating 0–3 | Constructed response / interpretation |
+|---|---|---:|---|
+| Access | 25% | 1 | Projects use link-based access; reviewer identity cannot always be established. |
+| Sharing/data safeguards | 25% | 0 | Two of five displayed review links permit unauthenticated access with no expiry; planned release scope is inadequate. |
+| Assurance/testing | 15% | 2 | A scoped test summary is constructed for this exercise; tenant sharing exceptions remain. |
+| Incident coordination | 10% | 2 | Named incident route is described; response exercise and contact failover not complete. |
+| Recovery/exit | 20% | 2 | Project export is described; permission-preserving re-import has not been demonstrated. |
+| Downstream chain | 5% | 2 | A downstream list is described; access-country and change-notice validation remain open. |
 
-Scores use [the policy weights and method](02-Policy-and-Method.md). Detailed response summaries below are the synthetic exhibits; the IDs are not links to undisclosed real documents.
+**Calculated index:** 41.7 / 100. Risk: criticality 4 × proxy likelihood 3 = **12, High**.
 
-## V01 — CloudMatrix Analytics
-| Question | Domain / weight | Rating 0–3 | Synthetic response and evidence interpretation | Basis | Finding |
-|---|---|---:|---|---|---|
-| Q1 | Access; 20% | 2 | MFA/role controls described; privileged support sample and scope incomplete | D-CM01: synthetic access summary | F03 |
-| Q2 | Data use/transfer; 20% | 0 | US-only processing; no applicable transfer terms established; customer authorisation to confirm | S-CM plus D-CM02: synthetic processing schedule | F01, F02 |
-| Q3 | Assurance/testing; 20% | 2 | SOC 2 Type 2 report claimed; no actual report inspected; synthetic summary lacks customer-responsibility review | S-CM plus D-CM03: synthetic assurance summary | F03 |
-| Q4 | Incident handling; 15% | 2 | Contacts and escalation path supplied in the simulation; exercise coverage incomplete | D-CM04: synthetic incident summary | F03 |
-| Q5 | Recovery/exit; 15% | 2 | Export and recovery procedures described; DataBridge recovery not demonstrated | D-CM05: synthetic exit summary | F02 |
-| Q6 | Subprocessor chain; 10% | 1 | Subprocessor list incomplete; onward support access locations unconfirmed | D-CM06: synthetic chain summary | F03 |
+**Decision proposed:** Hold external sharing until authenticated, expiring review access is enforced.
 
-**Assurance index:** 50.0 / 100 → Moderate posture. Criticality 4 × proxy likelihood 3 = **12, High**.
+**Principal findings:** N-F01 authenticated access; N-F02 expiry/download permissions; N-F03 permitted use, locations and client requirements.
 
-**Recommendation:** Hold client-data onboarding. A report claim does not resolve lawful transfer, instructions or AI-use limits. Legal must validate the current transfer route for each relevant flow; absence of SCCs alone is not proof that no alternative route is available. Synthetic-data evaluation may proceed within an approved scope.
+## N-V02 — ColdHarbor Archive
+| Domain | Weight | Rating 0–3 | Constructed response / interpretation |
+|---|---|---:|---|
+| Access | 25% | 3 | Complete synthetic roster shows scoped archive administration and approval. |
+| Sharing/data safeguards | 25% | 3 | Complete synthetic design separates asset access and protected key administration. |
+| Assurance/testing | 15% | 2 | Integrity-check procedure supplied in the simulation; independent coverage remains incomplete. |
+| Incident coordination | 10% | 2 | Incident contacts and escalation described; out-of-hours exercise missing. |
+| Recovery/exit | 20% | 0 | Retrieval exercise misses the proposed 8-hour RTO; no positive score credited for intended live use. |
+| Downstream chain | 5% | 2 | Storage and support chain described; change-control coverage remains partial. |
 
-**Three principal findings:** F01 transfer route/terms; F02 AI-use and data minimisation; F03 onward-chain and assurance scope.
+**Calculated index:** 70.0 / 100. Risk: criticality 4 × proxy likelihood 3 = **12, High**.
 
-## V02 — SecureVault Ltd.
-| Question | Domain / weight | Rating 0–3 | Synthetic response and evidence interpretation | Basis | Finding |
-|---|---|---:|---|---|---|
-| Q1 | Access; 20% | 3 | Complete synthetic operator roster shows approval and scoped administration | D-SV01: synthetic access evidence | F05 |
-| Q2 | Data safeguards; 20% | 3 | Synthetic encryption design covers transport, storage and key separation; contractual key-accountability schedule still needs execution | D-SV02: synthetic design exhibit | F05 |
-| Q3 | Assurance/testing; 20% | 3 | Case claims ISO certification; synthetic scope/review summary is complete for the service being assessed | S-SV plus D-SV03: synthetic review summary | F04 |
-| Q4 | Incident handling; 15% | 1 | Notification commitment allows 72 hours; only a policy assertion supports escalation | S-SV | F04 |
-| Q5 | Recovery/exit; 15% | 2 | Vendor restore procedure described; representative DataBridge restore and deletion flow not tested | D-SV05: synthetic recovery summary | F06 |
-| Q6 | Subprocessor chain; 10% | 2 | List supplied in simulation; onward change/notice terms incomplete | D-SV06: synthetic chain summary | F05 |
+**Decision proposed:** Hold release-critical archive dependency until recovery and key tests pass.
 
-**Assurance index:** 81.7 / 100 → Strong posture. Criticality 4 × proxy likelihood 2 = **8, Moderate**.
+**Principal findings:** N-F04 retrieval performance; N-F05 independent key recovery; N-F06 usable export/exit capacity.
 
-**Recommendation:** Conditional recommendation; no activation until the incident terms, responsibility schedule and representative restore meet the gates. Technical design evidence and contractual authority are separate: domain strength does not imply executed terms.
+## N-V03 — Cutline Collective
+| Domain | Weight | Rating 0–3 | Constructed response / interpretation |
+|---|---|---:|---|
+| Access | 25% | 0 | Editors share a project login; attributable access is not established. |
+| Sharing/data safeguards | 25% | 1 | Working copies may be downloaded; protected workspace and client restrictions are not evidenced. |
+| Assurance/testing | 15% | 1 | Self-attestation only; no suitable endpoint or review evidence in the constructed response. |
+| Incident coordination | 10% | 1 | One contact is named; backup coverage and exercised response are absent. |
+| Recovery/exit | 20% | 1 | Return/deletion is asserted; two of twelve working-copy deletion confirmations are missing. |
+| Downstream chain | 5% | 0 | The studio has not identified onward freelance access in the supplied synthetic profile. |
 
-**Three principal findings:** F04 incident notification; F05 key/chain responsibility schedule; F06 customer-representative restore and exit.
+**Calculated index:** 23.3 / 100. Risk: criticality 3 × proxy likelihood 4 = **12, High**.
 
-## V03 — TalentSphere HR
-| Question | Domain / weight | Rating 0–3 | Synthetic response and evidence interpretation | Basis | Finding |
-|---|---|---:|---|---|---|
-| Q1 | Access; 20% | 2 | Role controls and admin MFA described; leaver evidence incomplete | D-TS01: synthetic access summary | F09 |
-| Q2 | Data safeguards; 20% | 0 | Storage encryption/key arrangements unconfirmed; locations not mapped | S-TS | F07 |
-| Q3 | Assurance/testing; 20% | 1 | Self-assessment only; most recent penetration test stated as 18 months old | S-TS | F08 |
-| Q4 | Incident handling; 15% | 1 | Notification/cooperation described without executed terms or exercise evidence | D-TS04: synthetic summary | F09 |
-| Q5 | Recovery/exit; 15% | 1 | Backup claimed; HR export/restore not evidenced | D-TS05: synthetic summary | F09 |
-| Q6 | Subprocessor chain; 10% | 1 | Unverified list; no complete processing-location schedule | D-TS06: synthetic summary | F09 |
+**Decision proposed:** No new client footage until named access and managed working arrangements are evidenced.
 
-**Assurance index:** 33.3 / 100 → Weak posture. Criticality 3 × proxy likelihood 4 = **12, High**.
+**Principal findings:** N-F07 shared accounts; N-F08 protected editing environment; N-F09 return/deletion evidence.
 
-**Recommendation:** Hold live employee-data migration. Require adequate safeguards and fresh risk-appropriate test evidence; lack of ISO/SOC certification alone is not a rejection reason. Test age is a review trigger, not a universal statutory expiration period.
+## Evidence challenge
+FrameRelay's score does not compensate for unsafe sharing defaults. ColdHarbor's access and data-protection strengths do not offset failed restoration timing; technical key segregation still requires an independent recovery test. Cutline's claims do not establish who accessed or retained footage.
 
-**Three principal findings:** F07 encryption evidence; F08 current security testing and remediation; F09 processing terms, locations and operational support.
+N-V04–N-V06 have initial register profiles only, not full completed questionnaires. Their proposed follow-up findings remain proportionate to service scope.
 
-## Decision traceability
-| Assessment | Recommendation | Related actions | Release authority |
-|---|---|---|---|
-| V01 | Hold live client data | F01–F03 | Analytics Director after CISO/Legal clearance |
-| V02 | Conditional; activation blocked until gates close | F04–F06 | IT owner after CISO/Legal and recovery review |
-| V03 | Hold live employee migration | F07–F09 | HR Director after CISO/Legal clearance |
+## Release authority
+Security recommends; Legal confirms rights/instructions and applicable terms; business owner records the service decision; administrators release only the permitted scope. Do not close a finding or change a score merely because a supplier promises a fix.
 
-V04–V08 have initial register profiles and actions; they are not misrepresented as fully completed questionnaires. TechSupport Pro requires urgent full reassessment. The four added provider names are invented and describe no real company's security posture.
+[Action and closure requirements](05-Remediation-and-Decision-Tracker.md)

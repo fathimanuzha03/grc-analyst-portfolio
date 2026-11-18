@@ -1,53 +1,44 @@
-# Supplier risk policy and assessment method
-**Policy owner:** CISO | **Legal partner:** Head of Legal | **Review:** annual and on material change | **Status:** proposed
+# Supplier policy and assessment method
+**Policy status:** proposed | **Owner proposed:** Security Lead | **Business:** Northbank Studio simulation
 
-## Scope and operating rules
-Applies to suppliers, subcontractors and integrations that handle business data or access systems. Include existing providers, trials and AI services. Procurement must link every relevant contract to a business owner, data/access inventory, assessment and decision.
+## Scope and case assumptions
+Include all third parties receiving production assets or accessing review, edit, archive and delivery workflows. Contracting must cover freelancers and subcontractors, not just SaaS subscriptions.
 
-Before live data or access: classify criticality, establish processing roles, identify locations/subprocessors, assess controls, close mandatory gates and record the decision. Reassess when services, data, ownership, incidents or subprocessor chains change.
+The fictional business has 58 employees, around 190 annual freelance engagements, 30 clients and 110 productions per year. A campaign launch in 42 days is the scheduling constraint. The six supplier profiles and all detailed responses are constructed; processing/support countries and contract dates are unverified unless expressly stated in an exhibit.
 
-## Tiering
-| Tier | Criticality C | Criteria / required due diligence | Review frequency proposed |
+Review assets may contain identifiable people and confidential commercial material. Legal must validate usage rights, controller/processor roles, customer instructions and applicable privacy obligations. A copyright licence and a data-processing agreement solve different questions. No blanket conclusion about all footage, transfer routes or consent requirements is made.
+
+## Criticality and tiers
+| Tier | C | Criterion | Proposed review |
 |---|---:|---|---|
-| 1 — Critical | 4 | Privileged client access, core identity, irreplaceable recovery dependency or core sensitive-data processing | Full assessment, contract/recovery review; quarterly status check and at least annual full review |
-| 2 — High | 3 | Significant personal/confidential data but less direct critical-system dependency | Detailed questionnaire, evidence/terms and annual review |
-| 3 — Standard | 2 | Limited business data and restricted system impact | Proportionate check, security terms and review every 24 months |
-| 4 — Low | 1 | Ordering contacts only; no customer data or system access | Commercial baseline and review every 36 months, plus event triggers |
+| 1 — Release-critical | 4 | Core release/recovery dependency or substantial external footage-sharing exposure | Full assessment before release, quarterly condition check, annual reassessment |
+| 2 — Significant access | 3 | Downloaded sensitive working assets without being the sole delivery/recovery path | Detailed review before access, annual reassessment |
+| 3 — Restricted business data | 2 | Agreements/billing metadata; no production-media access | Proportionate review before use, then every 24 months |
+| 4 — Minimal exposure | 1 | No production/system access and minimal business-contact use | Commercial baseline, material-change triggers |
 
-SecureVault is Tier 1 here because production recovery is treated as a critical dependency, despite the reference's Tier 2 example. This is a documented analyst override requiring the service owner to validate criticality. Encrypted storage is still processing; assess key custody, recoverability and instructions. For every supplier the highest applicable criterion sets the tier; a good certificate does not lower inherent service criticality.
+Highest applicable criticality sets the tier. Evidence quality does not lower the business dependency.
 
-## Response/evidence scoring
-Six domains, with weights: access 20%, data handling 20%, assurance/testing 20%, incident response 15%, recovery/exit 15%, subprocessor chain 10%.
+## Assessment scoring
+Domains and weights: access 25%; sharing/data safeguards 25%; assurance/testing 15%; incident coordination 10%; recovery/exit 20%; downstream chain 5%.
 
-Rate each domain:
-- 0: missing, unknown, or fails a required safeguard.
-- 1: assertion/ad hoc arrangements, no adequate support.
-- 2: partial documented case evidence; operating coverage or exceptions remain.
-- 3: complete supporting evidence within the synthetic case for the assessed domain.
+Ratings: 0 unknown or inadequate for the planned scope; 1 unsupported claim/ad hoc approach; 2 partial synthetic evidence with material questions; 3 complete evidence within the synthetic exercise for the domain assessed.
 
-Assurance index = sum(weight × domain rating ÷ 3), rounded to one decimal only for display. Strong posture: ≥75; Moderate: ≥40 and <75; Weak: <40. Unknown controls receive no confidence credit but are not declared absent in reality.
+Index = sum(weight × rating ÷ 3), rounded only for display. Strong ≥75; Moderate ≥40 and <75; Weak <40. Model posture P is 3/2/1 respectively; proxy likelihood L=5−P. Risk score=C×L. Low 1–4; Moderate 5–9; High 10–16; Critical 17–25.
 
-For prioritisation only: P = 3 Strong, 2 Moderate, 1 Weak; proxy likelihood L = 5 − P. Score = criticality C × L. Bands: 1–4 Low, 5–9 Moderate, 10–16 High, 17–25 Critical. This is a local triage model, not a calibrated incident-probability estimate. With C≤4 and L≤4, its maximum is 16; retain hard-stop rules instead of inventing Critical scores.
+These are triage judgements, not calibrated probabilities. Because C≤4 and L≤4, the model cannot generate a Critical score. Hard stops independently govern release. Unknown controls receive no assurance credit but are not represented as proven real-world failures.
 
-## Mandatory gates override score
-No live onboarding/expanded access when:
-1. Required processing agreement/instructions or controller authorisation are missing.
-2. A restricted transfer lacks a validated legal route.
-3. Privileged access cannot be attributed, restricted and monitored.
-4. Required encryption/key safeguards for the planned sensitive dataset are unverified.
-5. A critical recovery dependency has no evidenced recovery/exit arrangements.
+## Mandatory release gates
+- External production footage requires authenticated, appropriately restricted recipients and enforceable access expiry.
+- Critical archive dependence requires representative recovery and usable exports meeting approved business objectives.
+- External editors require named access and evidenced protected working arrangements.
+- Relevant client permissions, processing terms and lawful transfer arrangements must be established.
+- A supplier cannot close a finding merely by submitting an unreviewed policy or certificate.
 
-A score identifies review priority; it is not an approval. Legal/security gates must be closed, not financially “accepted away.” A supplier without ISO/SOC evidence can provide other adequate evidence. A claim of SOC 2 is a report claim, not certification; inspect scope, period, opinion, exceptions and customer responsibilities.
+Use non-sensitive synthetic material for evaluation until the planned live-use scope is authorised.
 
-## Lifecycle and policy ownership
-| Step | Responsible role | Record |
-|---|---|---|
-| Request and criticality | Business owner | Service, data, access and recovery needs |
-| Diligence and security challenge | GRC with CISO | Scored responses, provenance, evidence gaps |
-| Contract and transfer review | Legal | Applicable terms, authorisation and transfer assessment |
-| Commercial release | Procurement | Approved decision with conditions |
-| Technical activation | IT / service owner | Gate evidence and configured scope |
-| Monitoring and reassessment | GRC / business owner | Review dates, incidents and material changes |
-| Exit | Business owner / IT / Legal | Export, access removal, deletion/retention and dependency checks |
+## Lifecycle
+Business owner requests/classifies service → Security reviews scoped evidence → Legal validates instructions/rights/terms → owner records decision → Procurement/IT enforce release → owner monitors incidents and changes → controlled export, revocation and return/deletion on exit.
 
-CISO owns security policy. Business owners accept operational exposure within approved delegation; executive sponsor accepts High-risk exceptions for at most 30 days, with one explicitly reviewed renewal. Legal duties and client instructions remain binding. Policy exceptions must be logged, not implied through overdue reviews.
+Managing Director may accept a High operational exception for at most 21 days with compensating controls, named owner and expiry. This cannot waive a hard stop or legal/client obligation. A material service, subprocessor, access or country change triggers reassessment.
+
+Maintain verified notice contacts, contract dates and ownership before operational use; none are invented as actual commitments in this simulation.

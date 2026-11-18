@@ -1,54 +1,54 @@
-# Evidence, references and review
-**Project type:** Simulation | **Author:** Fathima Nuzha M | **Date:** 18 November 2026
+# Synthetic evidence, primary sources and review
+**Project:** Northbank Studio simulation | **Version:** 2.0 | **Date:** 18 November 2026
 
-## Provenance
-| Basis | Meaning | Where used |
-|---|---|---|
-| S-CM / S-SV / S-TS / S-TP | Reference scenario statements for CloudMatrix, SecureVault, TalentSphere and TechSupport | Register and assessments |
-| D-CM01–06 / D-SV01–06 / D-TS01–06 | Constructed response summaries reproduced in the assessment tables | Domain ratings and recommendations |
-| V05–V08 | Entirely invented additional suppliers and initial profiles | Register, matrix and actions |
-| Synthetic incident/recovery timeline | Constructed times, not a live service record | Recovery arithmetic demonstration |
+## E-N01 — review-link sample
+| Asset | Recipient authentication | Expiry | Download |
+|---|---|---|---|
+| A01 | Named reviewer | 24 hours | No |
+| A02 | None; bearer link | None | Yes |
+| A03 | Named reviewer | 72 hours | No |
+| A04 | None; bearer link | None | Yes |
+| A05 | Named reviewer | 48 hours | Yes |
 
-No attachment, report or contract is implied to exist outside the supplied descriptions. Real supplier assurance would require actual evidence inspection and a record of reviewer, date, service scope, exceptions and customer responsibilities.
+Calculated result: **2/5 links lack both authentication and expiry**. Download rights require business-purpose review; a permitted download is not automatically a finding. No actual URLs or footage are present.
 
-## Reproducible validation
-Domain order: access, data, assurance, incident, recovery, chain. Weights: 20, 20, 20, 15, 15, 10; sum = 100.
+## E-N02 — working-copy reconciliation
+Twelve working-copy IDs W01–W12 are defined. Return/deletion confirmations exist for W01–W10. W11 and W12 have no confirmation. Result: **10/12 evidenced; 2/12 unresolved**. A missing record is not proof that the copy still exists, but prevents verified closure.
 
-Worked example V01: (20×2 + 20×0 + 20×2 + 15×2 + 15×2 + 10×1) ÷ 3 = **50.0**. This gives Moderate posture, proxy L=3, criticality=4 and score **12, High**. The transfer gate independently blocks client-data onboarding.
+## E-N03 — retrieval calculation
+Disruption: 18 November 2026, 09:00 UTC. Latest dataset: 17 November, 10:00 UTC. Usable recovery: 18 November, 20:00 UTC.
+- Elapsed recovery: 11h versus 8h RTO: fail by 3h.
+- Data age: 23h versus 24h RPO: pass with 1h margin.
+- No actual restoration occurred.
 
-Checked across the model:
-- Eight suppliers have unique IDs, eight named proposed owner roles and six domain ratings each.
-- Four High / three Moderate / one Low; no Critical score is possible under the bounded triage model.
-- Three full simulation questionnaires produce scores 50.0, 81.7 and 33.3.
-- Fifteen unique findings map to V01–V07; V08 has no finding in this limited scenario, which is not an assurance opinion.
-- The £45k budget reconciles to £20k internal effort plus £25k reserves.
-- The synthetic recovery timeline calculates 5h30 elapsed and 45 minutes of data age.
+## Score verification
+Domain weights 25/25/15/10/20/5 sum to 100. N-V01 calculation:
+(25×1 + 25×0 + 15×2 + 10×2 + 20×2 + 5×2) ÷ 3 = **41.7** after display rounding.
+Moderate posture → proxy likelihood 3; criticality 4 → **12, High**.
 
-These checks validate internal arithmetic and traceability, not operational controls, lawful transfers or supplier trustworthiness.
+Six suppliers have unique IDs and six ratings. The first three full response assessments score 41.7, 70.0 and 23.3. Counts: 4 High, 1 Moderate, 1 Low. Twelve findings cover the six suppliers. Budget: £13k staff + £17k reserve = £30k.
 
-## Reference scenario
-Adapted from Michael Lawrence's [DataBridge supplier-risk scenario](https://github.com/ciphermichael/grc-mentoring-portfolio/blob/main/Week-08/assignment.md). Attribution is retained. The portfolio modifies tiering where justified, distinguishes simulation from supplier representations and adds decision/recovery logic.
+All profiles, response summaries, record IDs and budgets are constructed for this portfolio. No real third-party company, certificate, report, contract or supplier statement is represented.
 
 ## Primary references
-| Source | Use / limitation |
+| Reference | Use / boundary |
 |---|---|
-| [NCSC supply-chain principles](https://www.ncsc.gov.uk/collection/supply-chain/guidance/12-principles) | Informs lifecycle oversight; this policy's tiers and frequencies are analyst proposals |
-| [ICO processor contract guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/contracts-and-liabilities-between-controllers-and-processors-multi/what-needs-to-be-included-in-the-contract/) | Supports role-specific contract review; ICO flags relevant guidance as under review following legislative change |
-| [ICO transfer guide](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/a-brief-guide-to-international-transfers/) | Supports assessing actual transfer flows and routes, not a blanket US prohibition |
-| [ICO breach guide](https://ico.org.uk/for-organisations/report-a-breach/personal-data-breach/personal-data-breaches-a-guide/) | Distinguishes processor notification from controller reporting duties |
-| [AICPA SOC resources](https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services) | SOC 2 report terminology; no actual vendor report was inspected |
+| [NCSC supply-chain principles](https://www.ncsc.gov.uk/collection/supply-chain/guidance/12-principles) | Lifecycle oversight; local tiers/weights are project choices |
+| [ICO processor contract guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/contracts-and-liabilities-between-controllers-and-processors-multi/what-needs-to-be-included-in-the-contract/) | Role-specific contractual review; validate current guidance and applicability |
+| [ICO transfer guide](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/a-brief-guide-to-international-transfers/) | Flow-by-flow transfer analysis before operational use |
+| [ICO breach guide](https://ico.org.uk/for-organisations/report-a-breach/personal-data-breach/personal-data-breaches-a-guide/) | Role-dependent incident notification duties |
+| [ISO/IEC 27001 overview](https://www.iso.org/standard/27001) | Supplier/control context; no full conformity assessment or standard reproduction |
 
-Guidance checked 18 November 2026. The example is informed by supplier controls A.5.19–A.5.22 and SOC 2 risk themes, but does not assert complete compliance with either standard or all privacy law. Formal use requires current legal and standards validation.
+References were checked during preparation on 18 November 2026 and should be revalidated before operational use. This release replaces an earlier portfolio scenario; normal Git history is retained.
 
-## Stakeholder review checklist
-- [ ] Business owners validate criticality, tolerable disruption and dependency assumptions.
-- [ ] CISO challenges synthetic ratings using actual scoped evidence.
-- [ ] Legal confirms processing/transfer terms and authorisation.
-- [ ] Finance validates costs, exclusions and transition reserves.
-- [ ] Procurement/IT confirm the release gates can be enforced.
-- [ ] Executive sponsor records approve / reject / conditions for each decision.
-- [ ] Any future completed exercise records actual participants, observations and retests.
+## Review and document control
+- [ ] Business owners validate asset criticality and service objectives.
+- [ ] Security challenges access/configuration evidence and tests hard stops.
+- [ ] Legal confirms rights, processing roles, agreements and locations.
+- [ ] Finance confirms quotes, staff availability and migration exclusions.
+- [ ] Decision owners record scope, conditions, expiry and sign-off.
+- [ ] Future exercises record actual participants, observations and retests.
 
-**Version 1.0:** simulation project prepared 18 November 2026. Initial drafting and calculations were AI-assisted. Management approval, supplier commitments and independent review are not obtained. Complete for portfolio review does not mean certified, operationally tested or stakeholder-approved.
+Version 2.0: Northbank scenario and synthetic evidence prepared 18 November 2026. Simulation arithmetic and links checked. No live assurance, supplier approval or realised business outcome is claimed. Reviewers' decisions are pending, not pre-filled.
 
 [Return to project](README.md)

@@ -1,60 +1,56 @@
-# Evidence inventory and validation
-**Evidence status:** scenario statements plus deliberately synthetic exhibits. No live control testing.
+# Synthetic evidence and validation
+**All records below are constructed for this simulation.** No live system or real personal data was accessed.
 
-## Evidence inventory
-| ID | Source / observation | Reliability and use |
+## E01 — partner integration register
+| Route | Credential label | Scope | Age since rotation |
+|---|---|---|---:|
+| Depot-A connector | K01 | All tenants | 180 days |
+| Operator-B connector | K01 | All tenants | 180 days |
+| Depot-C connector | K02 | Tenant C | 35 days |
+| Operator-D connector | K03 | Tenant D | 9 days |
+
+K01 is an invented identifier, not a usable credential. **Check H-V01:** three unique credential labels serve four routes; one label is reused across two routes. Both affected routes have broader scope than their stated customer boundary. Credential age alone does not prove compromise.
+
+## E02 — identity reconciliation sample
+| Identity | Employment state | Support account |
 |---|---|---|
-| S01 | Reference case: no formal risk assessment; 2021 policy lacks board approval | Supplied scenario assertion; X-R02 / X-C01 |
-| S02 | Reference case: direct developer production access; no PAM | Scope and operating detail not independently inspected; X-R01 / X-C11 |
-| S03 | Reference case: CloudTrail enabled, irregular review | Does not establish logging coverage; X-R04 / X-C14–15 |
-| S04 | Reference case: patching is informal | Actual coverage/ages unknown; X-R06 / X-C12 |
-| S05 | Reference case: backups configured, no DR plan or BIA | No restore success established; X-R03 / X-C07,13 |
-| S06 | Reference case: three critical suppliers unreviewed | Actual vendor control quality unknown; X-R05 / X-C04 |
-| S07 | Reference case: annual training without completion records | Training occurrence and evidence distinguished; X-R09 / X-C09 |
-| S08 | Reference case: keycards, no visitor log | No unauthorised entry claimed; X-R10 / X-C10 |
-| U01–U04 | Change safeguards, incident arrangements, inventory, processing requirements | Open requests supporting X-R07, X-R08, X-R11, X-R12 respectively |
-| D01–D04 | Synthetic datasets below | Constructed for reproducible portfolio analysis; never actual Xown exports |
+| U01 | Active | Enabled |
+| U02 | Active | Enabled |
+| U03 | Departed | Enabled |
+| U04 | Active | Disabled |
+| U05 | Departed | Enabled |
 
-## Synthetic exhibits
-**D01 — access sample**
-| Identity | Privileged | Interactive | Standing access | Approval record |
-|---|---|---|---|---|
-| dev-a | Yes | Yes | Yes | No |
-| dev-b | Yes | Yes | Yes | No |
-| ops-oncall | Yes | Yes | No | Yes |
-| svc-report | Yes | No | Yes | No |
-| finance-user | No | Yes | No | Yes |
+**Check H-V02:** two of two departed identities retain enabled accounts. Review and revoke unjustified access; an active employee's disabled account is not automatically a control failure.
 
-**D02 — backup sample:** B01 and B02 have successful backup-job status; both have an empty restore-evidence field.
+## E03 — recovery timeline, UTC
+| Event | Synthetic timestamp |
+|---|---|
+| Latest recoverable dataset | 17 November 2026, 23:00 |
+| Service disruption | 18 November 2026, 10:00 |
+| Restored application validated | 18 November 2026, 16:10 |
 
-**D03 — event sample:** login-failure is reviewed; privilege-grant and data-export are not reviewed. A missing review is not proof that an event is malicious.
+**Check H-V03:** recovery elapsed = 370 minutes (**6h10**); data age at disruption = 660 minutes (**11h**). Against proposed RTO 6h / RPO 2h: recovery exceeds target by **10 minutes**; data age exceeds target by **9 hours**. Both fail. No real restore was executed.
 
-**D04 — training sample:** eligible population P01–P10; completion rows P01, P02, P03, P04, P04, P99. P04 is duplicated; P99 is outside the eligible population.
+## E04 — release sample
+Application changes C01–C06 each have an independent approval record. Configuration changes C07 and C08 have none. All eight are treated as production releases in this synthetic sample.
 
-## Performed checks on synthetic data
-| Check | Rule applied | Result | Interpretation |
-|---|---|---|---|
-| X-V01 | Count privileged standing identities; separately inspect interactive approvals | 3/4 privileged identities standing; 2/3 interactive privileged identities lack approval | Prioritise entitlement review; a workload identity requires a suitable non-interactive control model |
-| X-V02 | Distinguish successful backup jobs from restore records | 2 successful jobs; 0 restore records | Backups alone cannot substantiate recovery |
-| X-V03 | Count events with no review record | 2/3 events unreviewed | Define triage ownership and timing; no incident conclusion |
-| X-V04 | Deduplicate completion rows and intersect with eligible population | 4/10 valid unique completions = 40% | Six rows do not mean 60% completion |
+**Check H-V04:** six of eight releases have an approval record (75%); two of eight lack one. Reviewing only the six application releases would incorrectly report 100%.
 
-These four analytical checks were performed against the displayed synthetic inputs. They support the method's demonstration only; do not use the percentages as live dashboard baselines.
+## Further case conditions
+Audit retention is set to 14 days without a documented investigation requirement; risk authority and retention rules remain drafts; partner outage responsibility and identity-independent recovery are untested. These are constructed scenario conditions, not extra performed tests.
 
-## Proposed acceptance tests
-| Test | Action | Population/sample and method | Pass condition / reviewer |
-|---|---|---|---|
-| T01 | X-A01 | Full privileged identity inventory; inspect all exceptions and one elevation per mechanism | All access justified, attributable and reviewed; workload identities separately controlled / CISO |
-| T02 | X-A02 | Inspect approved scope, method, risk ownership, full control-selection plan and buyer terms | Documents current, internally consistent, authorised / CEO |
-| T03 | X-A03 | Restore representative service and financial dataset in isolation | Measured recovery meets approved BIA objectives; integrity reconciles / IT + business owner |
-| T04 | X-A04 | Trigger authorised test event and trace alert-to-escalation | Relevant sources covered; record meets agreed triage timing / CISO |
-| T05 | X-A05 | Review all three critical services, dependencies and customer responsibilities | Scoped evidence, risk decision and contract actions recorded / CISO + Legal |
-| T06 | X-A06 | Reconcile inventory to scan population; inspect all overdue Critical items | No unexplained coverage gap; exceptions approved and time-limited / CISO |
-| T07 | X-A07 | Inspect 10 changes, or all if fewer, across routine/emergency classes | Approval, testing and rollback evidenced; failures investigated / CISO |
-| T08 | X-A08 | Exercise one supplier-origin breach and recovery scenario | Owner, clocks, customer paths and corrective actions documented / Legal + CISO |
-| T09 | X-A09 | Reconcile entire eligible population against unique valid training records | Target reached; all exceptions owned / HR + CISO |
-| T10 | X-A10 | Inspect visitor handling during one authorised visit and 10 recent records if available | Authorisation, logging and escort practice consistent / Office owner |
-| T11 | X-A11 | Reconcile critical services with cloud/accounts/endpoints and accountable owners | No unowned critical dependency / CISO |
-| T12 | X-A12 | Inspect all critical processing flows and relevant agreements | Legal confirms requirements and outstanding actions; no unsupported compliance claim / Legal |
+## Proposed implementation acceptance tests
+| Test | Coverage and method | Reviewer / pass condition |
+|---|---|---|
+| T01 | Inspect all four connector routes; revoke/rotate the reused material; test permitted and prohibited scopes | Security Lead: unique accountable credentials and least scope |
+| T02 | Full employee/contractor-to-account reconciliation; inspect all departed identities and exceptions | IT + HR owner: no unjustified leaver access |
+| T03 | Positive and negative tests for each tenant/API boundary and role combination | Independent engineering/security reviewer: unauthorised cases denied |
+| T04 | Representative application/data restore, including keys, dependencies and integrity | Operations/business owner: approved RTO/RPO met |
+| T05 | Inspect eight recent releases, or all if fewer, across every release class | Security Lead: approval, testing and rollback evidence complete |
+| T06 | Authorised synthetic access event traced to triage/escalation; assess coverage and retention requirement | Security Lead: owner and timing demonstrated |
+| T07 | Inspect scope, policy, methodology, risk owners and exception decisions | Managing Director: internally consistent approved record |
+| T08 | Reconcile customer-purpose rules to configured retention and representative deletion | Privacy Lead: justified schedule and tested exceptions |
+| T09 | Exercise one connector outage and customer update workflow | Partnerships/business owner: fallback and communications work |
+| T10 | Conduct authorised emergency access without primary SSO | IT/Security: controlled access, recovery and post-use review |
 
-These are proposed review methods, not ISO-prescribed sample sizes. Record tester, date, population, sample selection, evidence pointer, exceptions and retest for every executed live test. A single successful example does not prove year-round effectiveness.
+These are proposed acceptance methods, not ISO-mandated samples. A live test record needs tester, date, population, sample selection, evidence, exceptions and retest. Current results above validate analysis of fabricated inputs, not production effectiveness.

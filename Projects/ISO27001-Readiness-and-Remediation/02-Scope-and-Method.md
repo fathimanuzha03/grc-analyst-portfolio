@@ -1,56 +1,51 @@
-# Scope and assessment method
-**Assessment reference:** X-AS01 | **Basis date:** 18 November 2026 | **Status:** Proposed scope
+# Business scenario, scope and method
+**Scenario:** constructed for this portfolio | **Assessment date:** 18 November 2026
 
-## Business and system boundary
-The case describes a Birmingham financial-reporting SaaS provider with 120 employees: 45 development, 20 operations/support, 30 sales/account management and 25 finance/HR/administration. It serves 180 UK/EU businesses. Financial reports, shareholder information and payroll can include personal and commercially confidential data; not all financial information is automatically special-category personal data.
+## Business model
+HarbourRoute Systems provides appointment scheduling and depot arrival coordination for 52 UK transport operators. It has 76 employees and uses a managed cloud platform, a central identity service and four partner integration routes. An enterprise prospect is considering a first-year £540,000 rollout and asks for a funded security roadmap within 90 days.
 
-**Proposed ISMS scope:** development, delivery, operation and support of the financial-reporting SaaS service, including production and supporting cloud accounts, source control, deployment pipelines, corporate identity, endpoints used to administer the service, office access, relevant staff/contractors and supplier interfaces.
+The platform holds driver business-contact details, booking references, depot gate identifiers and appointment history. A proposed enterprise service tier introduces shorter recovery needs. There is no approved certification timetable.
 
-The reference names AWS, Salesforce and Zendesk as critical suppliers. Their exact roles, regions, contracts and integrations require discovery. This assessment assumes no unmentioned architecture, redundancy, data residency or security product.
+The simulation's starting conditions are deliberately defined as follows:
+- A connector secret is reused across two routes; both permit more scope than their stated business need.
+- Two leavers' support accounts remain active.
+- Tenant isolation is designed, but negative-test evidence is not available.
+- Backups run nightly; application and configuration releases follow different review paths.
+- Audit events are retained for 14 days without a documented investigative requirement or owner.
+- A draft retention schedule and service-risk process await approval.
+- Recovery depends on primary identity access; no independent emergency-access test is supplied.
 
-No exclusion is approved. Outsourced facilities remain relevant dependencies even where a provider operates physical safeguards. Xown must establish contractual coverage and its own responsibilities. Complete the asset/data-flow inventory before considering exclusions.
+These are invented case conditions, not findings about any real organisation or provider.
 
-## Parties and obligations
-| Party / owner | Requirement or concern | Scope decision |
-|---|---|---|
-| Henderson procurement / Sales | Certification or accepted roadmap within 60 days, per case | Confirm service boundary, milestones and evidence acceptance |
-| Existing customers / service owners | Confidentiality, accuracy, availability and contract commitments | Inventory customer terms and processing instructions |
-| CEO / CISO | Funded risk treatment, accountable programme | Set risk appetite and authority |
-| Legal / HR | Personal data, employment and processor obligations | Confirm controller/processor roles by purpose |
-| AWS and other suppliers / IT | Shared responsibilities and dependency assurance | Map service-specific responsibilities; inspect current evidence |
-| Certification body | Assessment against agreed scope and applicable standard | Verify accreditation and engagement; no booking is claimed |
+## Proposed ISMS scope
+Include the scheduling application, partner API/integration routes, deployment configuration, operational identities, administration endpoints, support workflow, booking/contact data and relevant cloud/supplier interfaces. Include the staff and processes that operate or change these components.
 
-UK GDPR and the Data Protection Act 2018, as amended, require role-specific review. EU GDPR scope depends on establishment and EU-directed processing, not nationality alone. Transfer mechanisms, representative/DPO needs and other sector requirements remain Legal questions. Financial services customers do not automatically make Xown FCA-regulated.
+No exclusion is approved. Discover data flows, service dependencies and contractual boundaries before approving the scope or a full Statement of Applicability. Provider-operated infrastructure remains a relevant dependency; it does not remove customer configuration and access responsibilities.
 
-## What was assessed
-A desk analysis of the supplied scenario, plus four checks over synthetic exhibits in [Evidence and validation](06-Evidence-and-Validation.md). No real system, employee record, supplier report or confidential client material was accessed.
+## Stakeholders
+| Role | Required contribution |
+|---|---|
+| Managing Director | Risk appetite, resources and exceptional acceptance |
+| Security Lead | Method, coordination, control selection and evidence challenge |
+| Platform / Engineering / IT | Connector boundaries, identities, secure changes and technical testing |
+| Operations | Business recovery needs, restoration and service commitments |
+| Privacy Lead | Controller/processor roles, retention, instructions and applicable requirements |
+| Partnerships / Sales | Integration scope and prospect acceptance criteria |
 
-Evidence labels:
-- **S:** a statement in the reference scenario, not independently verified.
-- **D:** data deliberately constructed for this portfolio.
-- **U:** unknown; evidence request outstanding.
-- **T:** proposed future acceptance test, not a completed live test.
+UK personal-data and customer-contract obligations need purpose-specific review. The case does not establish EU targeting, regulated financial activity, special-category data or a DPO requirement.
 
-A missing record is an assurance gap. It does not prove an incident or the complete absence of a technical control.
+## Evidence and confidence
+All E-* exhibits are synthetic records printed in [Evidence and validation](06-Evidence-and-Validation.md). They support arithmetic and analytical conclusions within the simulation only. Unavailable evidence is labelled a question or untested safeguard; it is not proof of a real-world incident.
 
-## Risk model
-Likelihood estimates concern the next 12 months. They are ordinal judgement bands:
-1 Rare: exceptional prerequisites; 2 Unlikely: plausible with substantial constraints; 3 Possible: credible path with some constraints; 4 Likely: repeated exposure with limited barriers; 5 Almost certain: frequent attempts and very weak barriers.
+This is a focused readiness assessment across clauses 4–10 and twelve selected control topics. Formal implementation requires the licensed current standard, full risk-led control selection and organisation-approved documentation.
 
-Impact is the highest credible consequence across service interruption, financial integrity/loss, personal-data harm and customer obligations:
-1 Negligible: locally reversible; 2 Minor: limited rework, no material customer interruption; 3 Material: service/customer impact requiring management response; 4 Major: substantial disruption, serious confidentiality loss or major contractual exposure; 5 Severe: prolonged critical-service loss or systemic compromise of financial records.
+## Risk method
+Assess a 12-month scenario horizon. Likelihood: 1 exceptional exposure; 2 credible with substantial barriers; 3 plausible with some barriers; 4 repeated exposure with weak barriers; 5 frequent exposure with very limited barriers.
 
-These are local definitions, not ISO/NIST-mandated scores or money-loss models. Likelihood × impact prioritises discussion, not mathematical expected loss.
+Impact: 1 local inconvenience; 2 limited operational rework; 3 material service/customer harm; 4 major data/service or contract harm; 5 sustained critical-service disruption or broad customer-boundary compromise. Select the highest credible consequence; avoid adding scores across impact types.
 
-**Bands:** 1–4 Low; 5–9 Moderate; 10–16 High; 17–25 Critical.
-- Critical: CEO decision; no routine acceptance; containment first.
-- High: CEO approval of any time-limited acceptance, with CISO challenge.
-- Moderate: CISO may accept up to 90 days within approved appetite.
-- Low: delegated service owner may accept with rationale and review date.
+Priority = likelihood × impact. Bands: Low 1–4; Moderate 5–9; High 10–16; Critical 17–25. These are local ordinal judgement scales, not expected financial loss or ISO-mandated scoring.
 
-Acceptance never waives a legal obligation or a non-negotiable contract term. Every exception needs scope, compensating control, owner, expiry and escalation. Proposed authority must be approved before operational use.
+Critical/High risk requires Managing Director review; no routine acceptance of Critical exposure. Moderate may be accepted for up to 60 days by Security Lead within approved appetite. Every acceptance needs an owner, scope, compensating safeguards, expiry and trigger for reassessment. Legal and contractual duties cannot be waived.
 
-## Assessment limits
-The control review covers management-system clauses 4–10 and sixteen prioritised Annex A topics using paraphrased summaries. It is not exhaustive. A complete, organisation-approved Statement of Applicability must evaluate necessary controls, justify inclusion/exclusion and record implementation; outsourcing alone does not justify deletion.
-
-The selected standard's current applicable amendments, including the published 2024 context amendment, must be obtained and validated by the implementation lead. Source links are in [Sources and review](07-Sources-and-Review.md).
+Current scores reflect the constructed starting safeguards. Target scores forecast treatment benefits and do not become residual-risk results until closure evidence is accepted.

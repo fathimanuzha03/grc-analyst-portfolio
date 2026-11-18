@@ -1,61 +1,54 @@
 # Remediation and decision tracker
-**Clock:** days from approved programme start | **Commitments:** proposed, not supplier-agreed
+**Targets:** calendar days from programme approval | **Every row:** Open / proposed, not a supplier commitment
 
-| ID | Vendor | Gap / required outcome | Proposed internal owner | Target day | Gate | Required closure evidence | Escalation if unresolved |
-|---|---|---|---|---:|---|---|---|
-| F01 | V01 | Applicable restricted-transfer route/terms unestablished | Legal | 30 | Before client data | Flow map, current route/recipient coverage and executed required safeguards | Hold service; select compliant alternative |
-| F02 | V01 | AI purpose, retention and training/reuse restrictions not agreed | Analytics Director | 30 | Before client data | Documented instructions, minimised test dataset, retention/deletion and prohibited reuse terms | Continue synthetic-data evaluation only |
-| F03 | V01 | Downstream locations, report scope and responsibilities incomplete | CISO | 30 | Before client data | Chain map, scoped report review, customer responsibilities and authorisation | Hold onboarding and escalate evidence failure |
-| F04 | V02 | 72-hour supplier notification term permits avoidable delay | Legal | 30 | Before activation | Executed prompt-notice and cooperation terms, tested contacts | Do not activate until corrected |
-| F05 | V02 | Key, administration and downstream responsibilities not executed in contract schedule | Head of IT / Legal | 30 | Before activation | Agreed responsibility matrix, key owner and chain terms | Hold activation; restrict scope |
-| F06 | V02 | Customer-representative recovery/exit not demonstrated | Head of IT | 60 | Before activation | Representative restore, integrity check and exit rehearsal meet approved targets | Use validated fallback; require retest |
-| F07 | V03 | Encryption/key arrangements not evidenced | HR Director | 30 | Before employee migration | Service-specific encryption and key evidence reviewed by CISO | No live HR migration |
-| F08 | V03 | Security test is 18 months old; closure evidence unavailable | CISO | 45 | Before employee migration | Fresh risk-appropriate test and closure/retest of relevant material findings | Hold migration or select alternative |
-| F09 | V03 | Processing locations, rights/incident support and exit terms incomplete | Legal | 30 | Before employee migration | Processing schedule, required terms, location map and export plan | Hold migration |
-| F10 | V04 | Privileged identity and session controls not evidenced | Support Director | 10 | Immediate containment | Named accounts, scoped/time-limited rights, strong authentication, session records | Disable unsafe access and activate controlled continuity |
-| F11 | V04 | Assessment overdue by scenario's three-year gap | CISO | 30 | Before unrestricted continuation | Full diligence, legal review and signed time-limited decision | Transition provider if unresolved |
-| F12 | V04 | Revocation and replacement support not tested | Head of IT | 30 | Before unrestricted continuation | Revoke/re-enable test, alternate support roster and customer coordination | Restrict to supervised sessions or transition |
-| F13 | V05 | SSO concentration and emergency access unproven | Head of IT | 45 | Before privilege expansion | Independent emergency-access test and dependency recovery review | No expanded integration |
-| F14 | V06 | Testing assurance limited; ticket content may exceed intended scope | Support Director | 60 | Before activation | Evidence review plus redaction/content rules and enforcement check | Restrict attachments and reassess tier if sensitive data enters |
-| F15 | V07 | Payroll incident/continuity terms incomplete | Finance Director | 30 | Before activation | Reviewed incident contacts, escalation and payroll contingency | Hold release; use approved payroll fallback |
+| Finding | Supplier | Gap | Proposed owner | Target day | Closure evidence required | If not resolved |
+|---|---|---|---|---:|---|---|
+| N-F01 | N-V01 | Unauthenticated footage review links | Production Director | 7 | Authenticated named recipients; deny unauthenticated access tests | Block unsafe sharing |
+| N-F02 | N-V01 | No expiry and overly broad download permissions | Platform Administrator | 7 | Expiry and download rules configured; verify every sharing mode | Use approved restricted review route |
+| N-F03 | N-V01 | Rights, instructions and location schedule incomplete | Legal Lead | 21 | Client permissions, roles, processing/access map and terms reviewed | Keep client assets out of unapproved scope |
+| N-F04 | N-V02 | Archive retrieval misses proposed RTO | Head of Post-production | 35 | Representative retrieval meets approved objective with integrity check | Maintain validated release copy and re-cost alternative |
+| N-F05 | N-V02 | Independent key recovery unproven | IT Lead | 21 | Authorised recovery without primary archive administrator succeeds | Do not rely on sole recovery path |
+| N-F06 | N-V02 | Bulk exit capacity and usable export not tested | Head of Post-production | 35 | Export representative asset set and metadata; validate reuse and timing | Retain second validated copy until exit proven |
+| N-F07 | N-V03 | Shared editor account | Post-production Producer | 7 | Named users, least access and reviewed joiner/leaver process | No new footage transfers |
+| N-F08 | N-V03 | Protected editing/endpoint controls not evidenced | Security Lead | 21 | Managed workspace or equivalent controls with reviewed evidence | Use an approved controlled editing environment |
+| N-F09 | N-V03 | Two working-copy deletion confirmations missing | Post-production Producer | 21 | Reconcile twelve copies; confirm return/deletion or authorised retention | Revoke further access and escalate asset location review |
+| N-F10 | N-V04 | Delivery route concentration/fallback untested | Delivery Manager | 35 | Alternative route and dependency failure exercise | Limit release commitment; retain controlled fallback |
+| N-F11 | N-V05 | Signature audit-trail retention/export not agreed | Commercial Manager | 21 | Retention matched to requirements; export and integrity reviewed | Limit contract use until required records can be retained |
+| N-F12 | N-V06 | Billing-data purpose/retention not documented | Finance Manager | 30 | Minimised fields and justified retention schedule | Restrict fields and close before data-scope expansion |
 
-All fifteen rows are **Open / proposed**. Supplier-committed dates, contract references, evidence links, reviewers and decision signatures are **not obtained**. A target date is not a vendor commitment or proof of closure.
+Actual supplier agreement dates, evidence links, reviewer signatures and completed actions are not obtained. A request for a fix is not completion.
 
-## Priorities and risk treatment
-F10 receives first operational attention because access already exists. F01/F02/F03 and F07/F08/F09 block new sensitive-data movement. F04/F05/F06 block backup activation. Remaining actions must be tracked even where no hard stop is triggered.
-
-Target posture after successful remediation: V01–V05 Strong, giving target scores 8, 8, 6, 8 and 8 respectively under this model. These are forecasts, not measured residual risk. V06/V07/V08 retain their current estimates until review provides a basis for change. Every supplier still requires a recorded release decision even if its target score is Moderate or Low.
-
-**Closure workflow:** supplier submits evidence → GRC checks completeness → CISO/Legal challenge within their remit → business owner records decision → IT/Procurement release authorised scope → GRC monitors conditions. A supplier assertion alone is not sufficient to close an evidence-dependent action.
-
-## 90-day resource envelope
-| Workstream | Allocated internal effort | External/tooling/test reserve | Total |
+## Budget and capacity
+| Workstream | Allocated internal effort | External reserve | Total |
 |---|---:|---:|---:|
-| Supplier diligence and evidence review | £8,000 | £6,000 | £14,000 |
-| Contract and transfer assessment | £4,000 | £8,000 | £12,000 |
-| Privileged-access containment | £5,000 | £2,000 | £7,000 |
-| Restore, incident and exit exercises | £3,000 | £4,000 | £7,000 |
-| Contingency: executive release only | £0 | £5,000 | £5,000 |
-| **Total** | **£20,000** | **£25,000** | **£45,000** |
+| Access and asset-sharing safeguards | £6,000 | £6,000 | £12,000 |
+| Recovery, exit and alternate delivery | £3,000 | £6,000 | £9,000 |
+| Contracts, rights and operational briefing | £3,000 | £3,000 | £6,000 |
+| Contingency; management release only | £1,000 | £2,000 | £3,000 |
+| **Total** | **£13,000** | **£17,000** | **£30,000** |
 
-Planning estimates only. Confirm capacity and quotes. Replacement suppliers, full migrations, new permanent salaries and VAT are excluded and need separate approval. The £45k is one programme envelope; the four vendor assessments do not each receive another £45k.
+Constructed planning estimates only; confirm capacity and quotations. Contingency includes reserved staff availability. VAT, new staff, replacement subscriptions and bulk migration are excluded. Do not add this budget again for each supplier.
 
-## Delivery and release gates
-| Window | Outcome | Owner | Review |
-|---|---|---|---|
-| Days 0–10 | Adopt intake gate; confirm service owners; restrict unsafe legacy support | CISO / Support / Procurement | Executive containment review |
-| Days 11–30 | Priority contracts/data flows and full V04 reassessment | Legal / GRC / business owners | Keep blocked services blocked; record exceptions only where allowed |
-| Days 31–60 | Evidence retests, restore and incident exercises; resolve test gaps | IT / CISO / suppliers | Release only service-specific proven scope |
-| Days 61–90 | Monitor decisions, exercise exit and report open exposure | GRC / executive sponsor | Close, renew a permitted exception, or fund transition |
-
-## Management reporting
-| Measure | Simulated starting position | Proposed operating target |
+## Gate schedule
+| Window | Required outcome | Decision |
 |---|---|---|
-| Registered suppliers with named proposed owner | 8/8 in this document | Confirm 8/8 actual owners by day 10 |
-| Priority live-data migrations on hold | V01 and V03 | Zero unauthorised releases |
-| High-score providers | 4/8 | All have approved treatment/containment decisions by day 30 |
-| Open findings | 15/15 | Every finding has a validated owner and evidence-based closure or escalation |
-| Critical-dependency recovery capability | Unverified | No activation before agreed recovery evidence; annual repeat thereafter |
-| Review dates | Proposed only | No expired Tier 1 review without executive escalation |
+| Days 0–7 | Contain unsafe sharing and external-editor exposure | Stop unsafe new use; preserve continuity safely |
+| Days 8–21 | Review clients' requirements, terms, managed working and key recovery | Owner records scope that may proceed |
+| Days 22–35 | Demonstrate retrieval, export and alternate delivery | No release-critical reliance on a failed or unproven path |
+| Days 36–42 | Campaign release check | Confirm safe assets, recipients and recovery/fallback route |
+| Days 43–60 | Retest conditions and close or escalate findings | Management review; costed transition if unresolved |
 
-Do not count a reminder email, a signature request or a changed due date as remediation.
+## Residual-risk decisions
+No current residual risk has been measured. If N-V01–N-V04 each obtain sufficient evidence for Strong posture, their illustrative target scores become 8, 8, 6 and 8. These are forecasts, not approval. N-V05/N-V06 retain current estimates until evidence supports a change.
+
+Security/Legal review submitted evidence; business owner records scope/conditions; Procurement and administrators enforce activation; Security tracks expiry and change triggers. Accepting a permitted operational risk requires authority and does not waive a hard stop.
+
+## Operating measures
+- Every footage-sharing service has an accountable owner and approved scope.
+- No unauthenticated public review route for controlled client assets.
+- All external editors are attributable and covered by working/return requirements.
+- Release-critical retrieval and fallback routes have current tested evidence.
+- All twelve findings have validated owners, closure evidence and decisions.
+- All exceptions have a compensating control, expiry and reassessment trigger.
+
+The synthetic samples establish analytical examples only, not live baseline metrics.

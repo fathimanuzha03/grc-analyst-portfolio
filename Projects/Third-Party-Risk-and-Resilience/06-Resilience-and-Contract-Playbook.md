@@ -1,50 +1,42 @@
-# Contract, incident and exit playbook
-**Use:** proposed operating instructions; Legal and service owners must validate before use.
+# Sharing, resilience and exit playbook
+**Status:** proposed operating instructions for the Northbank simulation
 
-## Contract review checklist
-Legal should confirm role-specific processing instructions, purpose/duration, data categories, confidentiality/security, authorised downstream providers, rights/incident assistance, audit information and end-of-service handling. A standard DPA label alone is insufficient. [ICO contract guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/contracts-and-liabilities-between-controllers-and-processors-multi/what-needs-to-be-included-in-the-contract/)
+## Asset-sharing gate
+Classify footage and agree the client's permitted audience/use before loading assets. Configure named reviewers, least access, expiry and permitted download behaviour. Check default links, copied links, forwarded links, guest accounts and mobile views.
 
-For every critical service, also agree scope, responsibilities, location/access changes, recovery objectives, evidence rights, exit support, data export format, notice contacts and escalation. These operational terms are proposed commercial safeguards; they are not all universal statutory requirements.
+Do not assume a certificate or favourable supplier questionnaire proves the studio's tenant configuration. Keep a record of the authorised service scope and the administrator who released it.
 
-V01 requires documented AI-use limits and a flow-by-flow transfer assessment. Legal must verify an applicable current route and recipient coverage; if safeguards such as an IDTA/Addendum are required, execute them and complete the applicable assessment. EU-origin flows require a separate relevant analysis. [ICO transfer guide](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/a-brief-guide-to-international-transfers/)
+## Contract and rights review
+Legal must validate applicable processing roles, client permissions, confidentiality, onward access, location changes, security/incident assistance, audit information and end-of-service handling. Production rights and privacy instructions must both be considered; one document does not automatically satisfy both.
+
+Where restricted transfers occur, validate the actual flow and applicable legal route. No country or transfer mechanism is inferred from the invented supplier's name. The analysis does not determine that every supplier is a processor or every incident requires regulator reporting.
 
 ## Incident coordination
-| Trigger / step | Proposed owner | Operational instruction |
+| Trigger | Owner | Action |
 |---|---|---|
-| Supplier suspects or becomes aware of relevant compromise | Supplier incident lead | Notify without undue delay as applicable; proposed contract target is within 4 hours, without waiting for that limit |
-| DataBridge receives notice | CISO incident commander | Log awareness times, service/data scope, access paths, facts/unknowns and containment |
-| Client data affected | Legal / account owner | As processor, inform relevant controllers without undue delay; follow agreed instructions and assistance duties |
-| DataBridge controller data affected, e.g. HR | Legal | Assess applicable regulator/individual notification thresholds and deadlines; do not assume every incident is reportable |
-| Recovery and communications | IT / business owner | Preserve evidence, rotate/revoke affected access, use verified channels and approve customer updates |
-| Follow-up | GRC / incident commander | Record corrective actions, root cause when known and reassessment triggers |
+| Exposed review link or unauthorised editor | Platform / Security | Restrict access, preserve records and identify assets/recipients |
+| Supplier service interruption | Delivery / Post-production | Activate validated fallback and track recovery milestones |
+| Potential personal-data breach | Legal / Security | Assess roles, facts and required notifications; processors notify relevant controllers without undue delay as applicable |
+| Client release affected | Account owner | Use verified contacts; communicate facts, uncertainty and next update |
+| Recovery complete | Business / Security | Validate integrity, review access and assign corrective actions |
 
-A controller's notifiable breach reporting window is not permission for its processor or subprocessor to wait 72 hours. [ICO breach guidance](https://ico.org.uk/for-organisations/report-a-breach/personal-data-breach/personal-data-breaches-a-guide/)
+An internal target such as one-hour triage is an operational proposal, not a universal legal deadline. Legal must distinguish supplier-to-customer notice from a controller's regulator notification duties. [ICO breach guidance](https://ico.org.uk/for-organisations/report-a-breach/personal-data-breach/personal-data-breaches-a-guide/)
 
-**Initial notice fields:** incident reference; discovery/awareness times with timezone; affected service and possible records; confirmed facts versus uncertainty; containment; contact; next update time. Do not delay an initial notice until a complete investigation.
+## Recovery specification
+Proposed archive objectives for release-critical masters: **RTO 8 hours; RPO 24 hours**. These need business approval and dependency validation.
 
-## Recovery exercise specification
-**Provisional objectives:** RTO 4 hours and RPO 1 hour for the selected production analytics dataset. These are simulation proposals, not an approved BIA or supplier guarantee. The business owner must validate tolerable disruption, dependencies and peak-period needs before contracting.
+A representative exercise should cover asset retrieval, independent key access, metadata/checksum reconciliation, usable media, required edit/project files and onward delivery. Verify bulk exit capacity rather than assuming small-file export proves timely project migration.
 
-Test an isolated restore with independent credentials, integrity reconciliation, protected-copy access, key availability and representative application validation. Demonstrate export/deletion sequencing for exit. A backup job marked successful is not a restore result.
+Synthetic exercise: disruption/request at 09:00 UTC on 18 November 2026; latest recoverable asset set at 10:00 UTC on 17 November; usable recovered assets validated at 20:00 UTC on 18 November.
 
-### Performed calculation on a synthetic exercise timeline
-| Event | Synthetic time |
-|---|---|
-| Service disruption begins | 08:00 |
-| Latest recoverable dataset timestamp | 07:15 |
-| Recovered service validated | 13:30 |
+Calculated elapsed recovery is **11 hours**, exceeding RTO by **3 hours**. Data age at disruption is **23 hours**, meeting RPO by **1 hour**. This is arithmetic over a constructed timeline, not an executed real restore. N-F04 remains open in the simulation.
 
-Calculated recovery elapsed time = **5 hours 30 minutes**; data-age gap = **45 minutes**. Against the provisional objectives: **RTO fails by 1 hour 30 minutes; RPO passes by 15 minutes**. No real restore was performed. This synthetic result keeps F06 open and illustrates why a strong questionnaire score cannot authorise activation.
+## Controlled exit
+1. Confirm replacement service, permissions and client continuity requirements.
+2. Export assets, metadata, reviews and necessary audit records in usable forms.
+3. Validate completeness and restore/reuse before deleting the old recovery copy.
+4. Revoke named accounts, share links, integration tokens and external-editor access.
+5. Confirm return/deletion or explicitly authorised retention across working copies and downstream parties.
+6. Retain justified audit evidence; close the supplier only after dependency and billing checks.
 
-## Controlled supplier exit
-1. Service owner approves a transition plan, customer dependencies and funding.
-2. IT exports required data/configuration in usable formats and validates completeness.
-3. Replacement service is tested before destructive deletion or access removal where continuity requires overlap.
-4. Revoke accounts, service credentials, tokens, network trust and support paths; retain an emergency plan.
-5. Legal confirms return/deletion and any legally required retention; obtain evidence covering backups and downstream providers as applicable.
-6. GRC records completion, verifies critical residual dependencies and closes the register only after review.
-
-For TechSupport Pro, a failed access-control gate triggers supervised/restricted operation or transition, with customer coordination. For IdentityHarbor, independently accessible emergency accounts must be secured and tested; “exit” cannot rely entirely on the failed identity service.
-
-## Exercise discussion prompts
-Could an attacker abuse a support session? Can DataBridge contact customers if SSO/email is unavailable? Can the backup be restored without the supplier's compromised console? Who can authorise isolation? Which facts can be communicated before investigation completes? Record actual exercise participants, decisions and follow-up when an exercise is conducted; none are fabricated here.
+For an editor, deletion evidence must cover local working copies. For the archive, exit must preserve the only usable master. For delivery, test a fallback outside any shared failure dependency.
